@@ -22,8 +22,10 @@ export function Footer() {
 
           {/* Parâmetros Holísticos */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Parâmetros Holísticos</h3>
-            <img src={parametrosLogo} alt="Parâmetros Logo" className="h-12 w-12 mb-4" />
+            <div className="flex items-center gap-2 mb-4">
+              <img src={parametrosLogo} alt="Parâmetros Logo" className="h-8 w-8 shrink-0" />
+              <h3 className="text-lg font-bold">Parâmetros Holísticos</h3>
+            </div>
             <p className="text-sm text-muted-fg mb-4">
               Formação Humana LTDA.
             </p>
