@@ -1,17 +1,1 @@
-[
-  {
-    "id": 1,
-    "titulo": "Seu Artigo Aqui",
-    "slug": "seu-artigo-aqui",
-    "resumo": "Um resumo breve do seu artigo que aparece na listagem",
-    "conteudo": "Aqui vai o conteúdo completo do seu artigo em Markdown.\n\n## Seção 1\nEscreva seu conteúdo aqui.\n\n## Seção 2\nMais conteúdo...\n\n---\n\n**INSTRUÇÕES:**\n1. Crie um arquivo .md na pasta \"posts\" com seu conteúdo\n2. Preencha o frontmatter (tudo entre ---) com:\n   - titulo: Título do artigo\n   - slug: URL-friendly (ex: meu-artigo)\n   - resumo: Resumo curto (aparece na listagem)\n   - autor: Nome do autor (padrão: Prof. Valter Franceschini)\n   - data: Data (YYYY-MM-DD)\n   - categoria: pesquisa | desenvolvimento | institucional\n   - tags: Vírgula separada por vírgulas\n3. Execute: npm run update-blog\n4. Seu artigo aparecerá automaticamente no site\n\n**Alternativa (JSON):**\nVocê também pode criar um arquivo .json na pasta \"posts\" com este formato:\n\n```json\n{\n  \"titulo\": \"Seu Artigo\",\n  \"slug\": \"seu-artigo\",\n  \"resumo\": \"Resumo breve\",\n  \"conteudo\": \"Conteúdo completo em HTML ou Markdown\",\n  \"autor\": \"Prof. Valter Franceschini\",\n  \"data\": \"2024-01-22\",\n  \"categoria\": \"pesquisa\",\n  \"tags\": [\"parapsicologia\", \"consciência\"]\n}\n```\n\nExecute: npm run update-blog",
-    "autor": "Prof. Valter Franceschini",
-    "data": "2024-01-22",
-    "categoria": "pesquisa",
-    "tags": [
-      "parapsicologia",
-      "consciência",
-      "ciência"
-    ]
-  }
-]
+[]

@@ -211,26 +211,29 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Sobre o CIPASO</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Ciência e Humanismo</h2>
             <div className="space-y-6 text-lg text-muted-fg leading-relaxed">
               <p>
-                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> foi
-                fundado em <strong>1989</strong> (CNPJ 58.984.089/0001-58) com a missão de
-                investigar fenômenos PSI e parapsicologia sob uma abordagem científica e
-                humanística.
+                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> é uma <strong>ciência experimental</strong> que estuda, identifica e classifica os fenômenos exteriorizados através da paranormalidade — a capacidade humana de percepção hiperestésica e conhecimento extrasensorial não convencional.
               </p>
 
               <p>
-                Localizado na histórica <strong>Rua Oswaldo Segamarchi, 15, Jardim Santa Rosália,
-                Sorocaba/SP</strong>, o centro se tornou referência regional em estudos de
-                reprogramação mental positiva e desenvolvimento humano.
+                Fundado em <strong>1989</strong>, há mais de 55 anos desenvolvemos metodologias para ajudar pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável. Trabalho com <strong>cura, orientação e aconselhamento</strong> baseado em princípios científicos rigorosos.
               </p>
 
               <p>
-                Em estreita colaboração com a <strong>Parâmetros Holísticos de Formação
-                Humana</strong> (CNPJ 67.361.410/0001-39), o CIPASO expandiu suas atividades para
-                formação de profissionais e pesquisa aplicada.
+                A base fundamental de nossa metodologia repousa nas <strong>5 Ferramentas Mentais</strong>, que operam nos níveis cerebrais beta, alfa, teta e delta, promovendo reprogramação mental positiva e programação consciente da mente.
               </p>
+
+              <div className="bg-white dark:bg-muted border border-primary/30 rounded-lg p-6 my-8">
+                <h3 className="text-xl font-bold mb-4 text-fg">A 3ª Lei da Mente</h3>
+                <p className="text-base italic text-primary font-medium mb-4">
+                  "O seu corpo reage de acordo com como age a sua mente."
+                </p>
+                <p className="text-base text-muted-fg">
+                  Esta é a origem das doenças psicossomáticas. Pensamentos destrutivos e negativos atraem aquilo que não serve e prejudica. Por isso, é imperativo trabalhar conscientemente a programação mental através de exercícios e vivência das Leis da Mente.
+                </p>
+              </div>
 
               <div className="bg-white dark:bg-muted border border-primary/30 rounded-lg p-8 mt-8">
                 <h3 className="text-2xl font-bold mb-6 text-fg">Valores Fundamentais</h3>

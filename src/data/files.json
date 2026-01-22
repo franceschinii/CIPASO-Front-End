@@ -1,6 +1,2175 @@
 [
   {
     "id": 1,
+    "titulo": "paraps-ipanema-01",
+    "descricao": "Publicação - paraps-ipanema-01",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps-ipanema-01.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 2,
+    "titulo": "paraps-ipanema-02",
+    "descricao": "Publicação - paraps-ipanema-02",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps-ipanema-02.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 3,
+    "titulo": "paraps-ipanema-03",
+    "descricao": "Publicação - paraps-ipanema-03",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps-ipanema-03.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 4,
+    "titulo": "paraps-ipanema-04",
+    "descricao": "Publicação - paraps-ipanema-04",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps-ipanema-04.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 5,
+    "titulo": "paraps01-01",
+    "descricao": "Publicação - paraps01-01",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-01.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 6,
+    "titulo": "paraps01-02",
+    "descricao": "Publicação - paraps01-02",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-02.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 7,
+    "titulo": "paraps01-03",
+    "descricao": "Publicação - paraps01-03",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-03.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 8,
+    "titulo": "paraps01-04",
+    "descricao": "Publicação - paraps01-04",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-04.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 9,
+    "titulo": "paraps01-05",
+    "descricao": "Publicação - paraps01-05",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-05.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 10,
+    "titulo": "paraps01-06",
+    "descricao": "Publicação - paraps01-06",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-06.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 11,
+    "titulo": "paraps01-07",
+    "descricao": "Publicação - paraps01-07",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-07.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 12,
+    "titulo": "paraps01-08",
+    "descricao": "Publicação - paraps01-08",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-08.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 13,
+    "titulo": "paraps01-09",
+    "descricao": "Publicação - paraps01-09",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-09.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 14,
+    "titulo": "paraps01-10",
+    "descricao": "Publicação - paraps01-10",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-10.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 15,
+    "titulo": "paraps01-100",
+    "descricao": "Publicação - paraps01-100",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-100.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 16,
+    "titulo": "paraps01-101",
+    "descricao": "Publicação - paraps01-101",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-101.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 17,
+    "titulo": "paraps01-102",
+    "descricao": "Publicação - paraps01-102",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-102.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 18,
+    "titulo": "paraps01-103",
+    "descricao": "Publicação - paraps01-103",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-103.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 19,
+    "titulo": "paraps01-104",
+    "descricao": "Publicação - paraps01-104",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-104.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 20,
+    "titulo": "paraps01-105",
+    "descricao": "Publicação - paraps01-105",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-105.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 21,
+    "titulo": "paraps01-106",
+    "descricao": "Publicação - paraps01-106",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-106.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 22,
+    "titulo": "paraps01-107",
+    "descricao": "Publicação - paraps01-107",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-107.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 23,
+    "titulo": "paraps01-108",
+    "descricao": "Publicação - paraps01-108",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-108.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 24,
+    "titulo": "paraps01-109",
+    "descricao": "Publicação - paraps01-109",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-109.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 25,
+    "titulo": "paraps01-11",
+    "descricao": "Publicação - paraps01-11",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-11.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 26,
+    "titulo": "paraps01-110",
+    "descricao": "Publicação - paraps01-110",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-110.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 27,
+    "titulo": "paraps01-111",
+    "descricao": "Publicação - paraps01-111",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-111.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 28,
+    "titulo": "paraps01-112",
+    "descricao": "Publicação - paraps01-112",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-112.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 29,
+    "titulo": "paraps01-113",
+    "descricao": "Publicação - paraps01-113",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-113.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 30,
+    "titulo": "paraps01-114",
+    "descricao": "Publicação - paraps01-114",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-114.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 31,
+    "titulo": "paraps01-115",
+    "descricao": "Publicação - paraps01-115",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-115.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 32,
+    "titulo": "paraps01-116",
+    "descricao": "Publicação - paraps01-116",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-116.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 33,
+    "titulo": "paraps01-117",
+    "descricao": "Publicação - paraps01-117",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-117.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 34,
+    "titulo": "paraps01-118",
+    "descricao": "Publicação - paraps01-118",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-118.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 35,
+    "titulo": "paraps01-119",
+    "descricao": "Publicação - paraps01-119",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-119.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 36,
+    "titulo": "paraps01-12",
+    "descricao": "Publicação - paraps01-12",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-12.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 37,
+    "titulo": "paraps01-120",
+    "descricao": "Publicação - paraps01-120",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-120.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 38,
+    "titulo": "paraps01-124",
+    "descricao": "Publicação - paraps01-124",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-124.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 39,
+    "titulo": "paraps01-125",
+    "descricao": "Publicação - paraps01-125",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-125.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 40,
+    "titulo": "paraps01-126",
+    "descricao": "Publicação - paraps01-126",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-126.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 41,
+    "titulo": "paraps01-127",
+    "descricao": "Publicação - paraps01-127",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-127.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 42,
+    "titulo": "paraps01-128",
+    "descricao": "Publicação - paraps01-128",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-128.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 43,
+    "titulo": "paraps01-129",
+    "descricao": "Publicação - paraps01-129",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-129.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 44,
+    "titulo": "paraps01-13",
+    "descricao": "Publicação - paraps01-13",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-13.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 45,
+    "titulo": "paraps01-130",
+    "descricao": "Publicação - paraps01-130",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-130.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 46,
+    "titulo": "paraps01-131",
+    "descricao": "Publicação - paraps01-131",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-131.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 47,
+    "titulo": "paraps01-132",
+    "descricao": "Publicação - paraps01-132",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-132.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 48,
+    "titulo": "paraps01-133",
+    "descricao": "Publicação - paraps01-133",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-133.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 49,
+    "titulo": "paraps01-134",
+    "descricao": "Publicação - paraps01-134",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-134.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 50,
+    "titulo": "paraps01-135",
+    "descricao": "Publicação - paraps01-135",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-135.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 51,
+    "titulo": "paraps01-136",
+    "descricao": "Publicação - paraps01-136",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-136.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 52,
+    "titulo": "paraps01-137",
+    "descricao": "Publicação - paraps01-137",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-137.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 53,
+    "titulo": "paraps01-138",
+    "descricao": "Publicação - paraps01-138",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-138.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 54,
+    "titulo": "paraps01-139",
+    "descricao": "Publicação - paraps01-139",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-139.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 55,
+    "titulo": "paraps01-14",
+    "descricao": "Publicação - paraps01-14",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-14.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 56,
+    "titulo": "paraps01-140",
+    "descricao": "Publicação - paraps01-140",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-140.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 57,
+    "titulo": "paraps01-141",
+    "descricao": "Publicação - paraps01-141",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-141.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 58,
+    "titulo": "paraps01-142",
+    "descricao": "Publicação - paraps01-142",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-142.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 59,
+    "titulo": "paraps01-143",
+    "descricao": "Publicação - paraps01-143",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-143.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 60,
+    "titulo": "paraps01-144",
+    "descricao": "Publicação - paraps01-144",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-144.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 61,
+    "titulo": "paraps01-145",
+    "descricao": "Publicação - paraps01-145",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-145.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 62,
+    "titulo": "paraps01-146",
+    "descricao": "Publicação - paraps01-146",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-146.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 63,
+    "titulo": "paraps01-147",
+    "descricao": "Publicação - paraps01-147",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-147.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 64,
+    "titulo": "paraps01-148",
+    "descricao": "Publicação - paraps01-148",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-148.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 65,
+    "titulo": "paraps01-149",
+    "descricao": "Publicação - paraps01-149",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-149.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 66,
+    "titulo": "paraps01-15",
+    "descricao": "Publicação - paraps01-15",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-15.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 67,
+    "titulo": "paraps01-150",
+    "descricao": "Publicação - paraps01-150",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-150.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 68,
+    "titulo": "paraps01-151",
+    "descricao": "Publicação - paraps01-151",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-151.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 69,
+    "titulo": "paraps01-152",
+    "descricao": "Publicação - paraps01-152",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-152.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 70,
+    "titulo": "paraps01-153",
+    "descricao": "Publicação - paraps01-153",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-153.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 71,
+    "titulo": "paraps01-154",
+    "descricao": "Publicação - paraps01-154",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-154.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 72,
+    "titulo": "paraps01-155",
+    "descricao": "Publicação - paraps01-155",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-155.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 73,
+    "titulo": "paraps01-156",
+    "descricao": "Publicação - paraps01-156",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-156.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 74,
+    "titulo": "paraps01-157",
+    "descricao": "Publicação - paraps01-157",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-157.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 75,
+    "titulo": "paraps01-158",
+    "descricao": "Publicação - paraps01-158",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-158.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 76,
+    "titulo": "paraps01-159",
+    "descricao": "Publicação - paraps01-159",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-159.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 77,
+    "titulo": "paraps01-16",
+    "descricao": "Publicação - paraps01-16",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-16.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 78,
+    "titulo": "paraps01-160",
+    "descricao": "Publicação - paraps01-160",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-160.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 79,
+    "titulo": "paraps01-161",
+    "descricao": "Publicação - paraps01-161",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-161.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 80,
+    "titulo": "paraps01-162",
+    "descricao": "Publicação - paraps01-162",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-162.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 81,
+    "titulo": "paraps01-163",
+    "descricao": "Publicação - paraps01-163",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-163.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 82,
+    "titulo": "paraps01-164",
+    "descricao": "Publicação - paraps01-164",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-164.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 83,
+    "titulo": "paraps01-165",
+    "descricao": "Publicação - paraps01-165",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-165.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 84,
+    "titulo": "paraps01-166",
+    "descricao": "Publicação - paraps01-166",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-166.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 85,
+    "titulo": "paraps01-167",
+    "descricao": "Publicação - paraps01-167",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-167.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 86,
+    "titulo": "paraps01-168",
+    "descricao": "Publicação - paraps01-168",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-168.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 87,
+    "titulo": "paraps01-169",
+    "descricao": "Publicação - paraps01-169",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-169.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 88,
+    "titulo": "paraps01-17",
+    "descricao": "Publicação - paraps01-17",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-17.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 89,
+    "titulo": "paraps01-170",
+    "descricao": "Publicação - paraps01-170",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-170.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 90,
+    "titulo": "paraps01-171",
+    "descricao": "Publicação - paraps01-171",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-171.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 91,
+    "titulo": "paraps01-172",
+    "descricao": "Publicação - paraps01-172",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-172.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 92,
+    "titulo": "paraps01-173",
+    "descricao": "Publicação - paraps01-173",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-173.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 93,
+    "titulo": "paraps01-174",
+    "descricao": "Publicação - paraps01-174",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-174.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 94,
+    "titulo": "paraps01-175",
+    "descricao": "Publicação - paraps01-175",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-175.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 95,
+    "titulo": "paraps01-176",
+    "descricao": "Publicação - paraps01-176",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-176.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 96,
+    "titulo": "paraps01-177",
+    "descricao": "Publicação - paraps01-177",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-177.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 97,
+    "titulo": "paraps01-18",
+    "descricao": "Publicação - paraps01-18",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-18.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 98,
+    "titulo": "paraps01-19",
+    "descricao": "Publicação - paraps01-19",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-19.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 99,
+    "titulo": "paraps01-20",
+    "descricao": "Publicação - paraps01-20",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-20.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 100,
+    "titulo": "paraps01-21",
+    "descricao": "Publicação - paraps01-21",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-21.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 101,
+    "titulo": "paraps01-22",
+    "descricao": "Publicação - paraps01-22",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-22.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 102,
+    "titulo": "paraps01-23",
+    "descricao": "Publicação - paraps01-23",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-23.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 103,
+    "titulo": "paraps01-24",
+    "descricao": "Publicação - paraps01-24",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-24.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 104,
+    "titulo": "paraps01-25",
+    "descricao": "Publicação - paraps01-25",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-25.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 105,
+    "titulo": "paraps01-26",
+    "descricao": "Publicação - paraps01-26",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-26.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 106,
+    "titulo": "paraps01-27",
+    "descricao": "Publicação - paraps01-27",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-27.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 107,
+    "titulo": "paraps01-28",
+    "descricao": "Publicação - paraps01-28",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-28.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 108,
+    "titulo": "paraps01-29",
+    "descricao": "Publicação - paraps01-29",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-29.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 109,
+    "titulo": "paraps01-30",
+    "descricao": "Publicação - paraps01-30",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-30.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 110,
+    "titulo": "paraps01-31",
+    "descricao": "Publicação - paraps01-31",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-31.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 111,
+    "titulo": "paraps01-32",
+    "descricao": "Publicação - paraps01-32",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-32.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 112,
+    "titulo": "paraps01-33",
+    "descricao": "Publicação - paraps01-33",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-33.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 113,
+    "titulo": "paraps01-34",
+    "descricao": "Publicação - paraps01-34",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-34.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 114,
+    "titulo": "paraps01-35",
+    "descricao": "Publicação - paraps01-35",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-35.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 115,
+    "titulo": "paraps01-36",
+    "descricao": "Publicação - paraps01-36",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-36.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 116,
+    "titulo": "paraps01-37",
+    "descricao": "Publicação - paraps01-37",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-37.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 117,
+    "titulo": "paraps01-38",
+    "descricao": "Publicação - paraps01-38",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-38.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 118,
+    "titulo": "paraps01-39",
+    "descricao": "Publicação - paraps01-39",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-39.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 119,
+    "titulo": "paraps01-40",
+    "descricao": "Publicação - paraps01-40",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-40.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 120,
+    "titulo": "paraps01-41",
+    "descricao": "Publicação - paraps01-41",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-41.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 121,
+    "titulo": "paraps01-42",
+    "descricao": "Publicação - paraps01-42",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-42.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 122,
+    "titulo": "paraps01-43",
+    "descricao": "Publicação - paraps01-43",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-43.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 123,
+    "titulo": "paraps01-44",
+    "descricao": "Publicação - paraps01-44",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-44.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 124,
+    "titulo": "paraps01-45",
+    "descricao": "Publicação - paraps01-45",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-45.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 125,
+    "titulo": "paraps01-46",
+    "descricao": "Publicação - paraps01-46",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-46.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 126,
+    "titulo": "paraps01-47",
+    "descricao": "Publicação - paraps01-47",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-47.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 127,
+    "titulo": "paraps01-48",
+    "descricao": "Publicação - paraps01-48",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-48.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 128,
+    "titulo": "paraps01-49",
+    "descricao": "Publicação - paraps01-49",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-49.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 129,
+    "titulo": "paraps01-50",
+    "descricao": "Publicação - paraps01-50",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-50.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 130,
+    "titulo": "paraps01-51",
+    "descricao": "Publicação - paraps01-51",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-51.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 131,
+    "titulo": "paraps01-52",
+    "descricao": "Publicação - paraps01-52",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-52.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 132,
+    "titulo": "paraps01-53",
+    "descricao": "Publicação - paraps01-53",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-53.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 133,
+    "titulo": "paraps01-54",
+    "descricao": "Publicação - paraps01-54",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-54.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 134,
+    "titulo": "paraps01-55",
+    "descricao": "Publicação - paraps01-55",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-55.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 135,
+    "titulo": "paraps01-56",
+    "descricao": "Publicação - paraps01-56",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-56.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 136,
+    "titulo": "paraps01-57",
+    "descricao": "Publicação - paraps01-57",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-57.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 137,
+    "titulo": "paraps01-58",
+    "descricao": "Publicação - paraps01-58",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-58.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 138,
+    "titulo": "paraps01-59",
+    "descricao": "Publicação - paraps01-59",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-59.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 139,
+    "titulo": "paraps01-60",
+    "descricao": "Publicação - paraps01-60",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-60.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 140,
+    "titulo": "paraps01-61",
+    "descricao": "Publicação - paraps01-61",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-61.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 141,
+    "titulo": "paraps01-62",
+    "descricao": "Publicação - paraps01-62",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-62.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 142,
+    "titulo": "paraps01-63",
+    "descricao": "Publicação - paraps01-63",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-63.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 143,
+    "titulo": "paraps01-64",
+    "descricao": "Publicação - paraps01-64",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-64.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 144,
+    "titulo": "paraps01-65",
+    "descricao": "Publicação - paraps01-65",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-65.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 145,
+    "titulo": "paraps01-66",
+    "descricao": "Publicação - paraps01-66",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-66.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 146,
+    "titulo": "paraps01-67",
+    "descricao": "Publicação - paraps01-67",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-67.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 147,
+    "titulo": "paraps01-69",
+    "descricao": "Publicação - paraps01-69",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-69.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 148,
+    "titulo": "paraps01-70",
+    "descricao": "Publicação - paraps01-70",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-70.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 149,
+    "titulo": "paraps01-71",
+    "descricao": "Publicação - paraps01-71",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-71.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 150,
+    "titulo": "paraps01-72",
+    "descricao": "Publicação - paraps01-72",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-72.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 151,
+    "titulo": "paraps01-73",
+    "descricao": "Publicação - paraps01-73",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-73.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 152,
+    "titulo": "paraps01-74",
+    "descricao": "Publicação - paraps01-74",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-74.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 153,
+    "titulo": "paraps01-75",
+    "descricao": "Publicação - paraps01-75",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-75.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 154,
+    "titulo": "paraps01-78",
+    "descricao": "Publicação - paraps01-78",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-78.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 155,
+    "titulo": "paraps01-79",
+    "descricao": "Publicação - paraps01-79",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-79.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 156,
+    "titulo": "paraps01-80",
+    "descricao": "Publicação - paraps01-80",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-80.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 157,
+    "titulo": "paraps01-81",
+    "descricao": "Publicação - paraps01-81",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-81.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 158,
+    "titulo": "paraps01-82",
+    "descricao": "Publicação - paraps01-82",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-82.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 159,
+    "titulo": "paraps01-83",
+    "descricao": "Publicação - paraps01-83",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-83.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 160,
+    "titulo": "paraps01-84",
+    "descricao": "Publicação - paraps01-84",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-84.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 161,
+    "titulo": "paraps01-85",
+    "descricao": "Publicação - paraps01-85",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-85.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 162,
+    "titulo": "paraps01-86",
+    "descricao": "Publicação - paraps01-86",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-86.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 163,
+    "titulo": "paraps01-87",
+    "descricao": "Publicação - paraps01-87",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-87.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 164,
+    "titulo": "paraps01-88",
+    "descricao": "Publicação - paraps01-88",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-88.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 165,
+    "titulo": "paraps01-89",
+    "descricao": "Publicação - paraps01-89",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-89.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 166,
+    "titulo": "paraps01-90",
+    "descricao": "Publicação - paraps01-90",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-90.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 167,
+    "titulo": "paraps01-91",
+    "descricao": "Publicação - paraps01-91",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-91.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 168,
+    "titulo": "paraps01-92",
+    "descricao": "Publicação - paraps01-92",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-92.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 169,
+    "titulo": "paraps01-93",
+    "descricao": "Publicação - paraps01-93",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-93.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 170,
+    "titulo": "paraps01-94",
+    "descricao": "Publicação - paraps01-94",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-94.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 171,
+    "titulo": "paraps01-95",
+    "descricao": "Publicação - paraps01-95",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-95.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 172,
+    "titulo": "paraps01-96",
+    "descricao": "Publicação - paraps01-96",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-96.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 173,
+    "titulo": "paraps01-97",
+    "descricao": "Publicação - paraps01-97",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-97.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 174,
+    "titulo": "paraps01-98",
+    "descricao": "Publicação - paraps01-98",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-98.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 175,
+    "titulo": "paraps01-99",
+    "descricao": "Publicação - paraps01-99",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01-99.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 176,
+    "titulo": "paraps01",
+    "descricao": "Publicação - paraps01",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps01.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 177,
+    "titulo": "paraps02",
+    "descricao": "Publicação - paraps02",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps02.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 178,
+    "titulo": "paraps03",
+    "descricao": "Publicação - paraps03",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps03.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 179,
+    "titulo": "paraps04",
+    "descricao": "Publicação - paraps04",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps04.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 180,
+    "titulo": "paraps05",
+    "descricao": "Publicação - paraps05",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps05.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 181,
+    "titulo": "paraps06",
+    "descricao": "Publicação - paraps06",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps06.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 182,
+    "titulo": "paraps07",
+    "descricao": "Publicação - paraps07",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps07.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 183,
+    "titulo": "paraps08",
+    "descricao": "Publicação - paraps08",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps08.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 184,
+    "titulo": "paraps09",
+    "descricao": "Publicação - paraps09",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps09.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 185,
+    "titulo": "paraps10",
+    "descricao": "Publicação - paraps10",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps10.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 186,
+    "titulo": "paraps11",
+    "descricao": "Publicação - paraps11",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps11.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 187,
+    "titulo": "paraps12",
+    "descricao": "Publicação - paraps12",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps12.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 188,
+    "titulo": "paraps13",
+    "descricao": "Publicação - paraps13",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps13.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 189,
+    "titulo": "paraps14",
+    "descricao": "Publicação - paraps14",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps14.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 190,
+    "titulo": "paraps15",
+    "descricao": "Publicação - paraps15",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps15.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 191,
+    "titulo": "paraps16",
+    "descricao": "Publicação - paraps16",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps16.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 192,
+    "titulo": "paraps18",
+    "descricao": "Publicação - paraps18",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps18.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 193,
+    "titulo": "paraps19",
+    "descricao": "Publicação - paraps19",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps19.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 194,
+    "titulo": "paraps20",
+    "descricao": "Publicação - paraps20",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps20.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 195,
+    "titulo": "paraps21",
+    "descricao": "Publicação - paraps21",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps21.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 196,
+    "titulo": "paraps22",
+    "descricao": "Publicação - paraps22",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps22.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 197,
+    "titulo": "paraps23",
+    "descricao": "Publicação - paraps23",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps23.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 198,
+    "titulo": "paraps24",
+    "descricao": "Publicação - paraps24",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps24.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 199,
+    "titulo": "paraps25",
+    "descricao": "Publicação - paraps25",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps25.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 200,
+    "titulo": "paraps26",
+    "descricao": "Publicação - paraps26",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps26.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 201,
+    "titulo": "paraps27",
+    "descricao": "Publicação - paraps27",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps27.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 202,
+    "titulo": "paraps28",
+    "descricao": "Publicação - paraps28",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps28.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 203,
+    "titulo": "paraps29",
+    "descricao": "Publicação - paraps29",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps29.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 204,
+    "titulo": "paraps30",
+    "descricao": "Publicação - paraps30",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps30.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 205,
+    "titulo": "paraps31",
+    "descricao": "Publicação - paraps31",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps31.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 206,
+    "titulo": "paraps32",
+    "descricao": "Publicação - paraps32",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps32.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 207,
+    "titulo": "paraps33",
+    "descricao": "Publicação - paraps33",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps33.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 208,
+    "titulo": "paraps34",
+    "descricao": "Publicação - paraps34",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps34.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 209,
+    "titulo": "paraps35",
+    "descricao": "Publicação - paraps35",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps35.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 210,
+    "titulo": "paraps36",
+    "descricao": "Publicação - paraps36",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps36.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 211,
+    "titulo": "paraps37",
+    "descricao": "Publicação - paraps37",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps37.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 212,
+    "titulo": "paraps38",
+    "descricao": "Publicação - paraps38",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps38.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 213,
+    "titulo": "paraps39",
+    "descricao": "Publicação - paraps39",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps39.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 214,
+    "titulo": "paraps40",
+    "descricao": "Publicação - paraps40",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps40.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 215,
+    "titulo": "paraps41",
+    "descricao": "Publicação - paraps41",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps41.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 216,
+    "titulo": "paraps42",
+    "descricao": "Publicação - paraps42",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps42.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 217,
+    "titulo": "paraps43",
+    "descricao": "Publicação - paraps43",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps43.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 218,
+    "titulo": "paraps44",
+    "descricao": "Publicação - paraps44",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps44.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 219,
+    "titulo": "paraps45",
+    "descricao": "Publicação - paraps45",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps45.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 220,
+    "titulo": "paraps46",
+    "descricao": "Publicação - paraps46",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps46.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 221,
+    "titulo": "paraps47",
+    "descricao": "Publicação - paraps47",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps47.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 222,
+    "titulo": "paraps48",
+    "descricao": "Publicação - paraps48",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps48.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 223,
+    "titulo": "paraps49",
+    "descricao": "Publicação - paraps49",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps49.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 224,
+    "titulo": "paraps50",
+    "descricao": "Publicação - paraps50",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps50.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 225,
+    "titulo": "paraps51",
+    "descricao": "Publicação - paraps51",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps51.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 226,
+    "titulo": "paraps52",
+    "descricao": "Publicação - paraps52",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps52.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 227,
+    "titulo": "paraps53",
+    "descricao": "Publicação - paraps53",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps53.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 228,
+    "titulo": "paraps54",
+    "descricao": "Publicação - paraps54",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps54.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 229,
+    "titulo": "paraps55",
+    "descricao": "Publicação - paraps55",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps55.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 230,
+    "titulo": "paraps56",
+    "descricao": "Publicação - paraps56",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps56.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 231,
+    "titulo": "paraps57",
+    "descricao": "Publicação - paraps57",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps57.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 232,
+    "titulo": "paraps58",
+    "descricao": "Publicação - paraps58",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps58.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 233,
+    "titulo": "paraps59",
+    "descricao": "Publicação - paraps59",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps59.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 234,
+    "titulo": "paraps60",
+    "descricao": "Publicação - paraps60",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps60.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 235,
+    "titulo": "paraps61",
+    "descricao": "Publicação - paraps61",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps61.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 236,
+    "titulo": "paraps62",
+    "descricao": "Publicação - paraps62",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps62.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 237,
+    "titulo": "paraps63",
+    "descricao": "Publicação - paraps63",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps63.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 238,
+    "titulo": "paraps64",
+    "descricao": "Publicação - paraps64",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/paraps64.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 239,
+    "titulo": "ParapsDiarioDeSorocaba",
+    "descricao": "Publicação - ParapsDiarioDeSorocaba",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/ParapsDiarioDeSorocaba.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 240,
+    "titulo": "ParapsJornalIpanema",
+    "descricao": "Publicação - ParapsJornalIpanema",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/ParapsJornalIpanema.pdf",
+    "tipo": "livro"
+  },
+  {
+    "id": 241,
+    "titulo": "www.geocities",
+    "descricao": "Publicação - www.geocities",
+    "categoria": "livros",
+    "data": "2026-01-22",
+    "path": "/uploads/publicacoes/www.geocities.ws",
+    "tipo": "livro"
+  },
+  {
+    "id": 242,
     "titulo": "O que é Parapsicologia",
     "descricao": "Vídeo - O que é Parapsicologia",
     "categoria": "videos",

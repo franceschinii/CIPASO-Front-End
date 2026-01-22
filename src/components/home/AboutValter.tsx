@@ -66,32 +66,39 @@ export function AboutValter() {
               {/* Citação Destaque */}
               <blockquote className="border-l-4 border-primary pl-6 py-4 bg-primary/5 rounded-r-lg my-8">
                 <p className="text-lg italic mb-2">
-                  "Viver melhor não é ter mais, é ser mais consciente de si mesmo e do mundo ao redor."
+                  "O seu corpo reage de acordo com como age a sua mente."
                 </p>
                 <cite className="text-sm text-muted-fg not-italic">
                   — Prof. Valter Franceschini
                 </cite>
               </blockquote>
 
-              {/* Legado */}
+              {/* 5 Ferramentas Mentais */}
               <div className="bg-bg border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Legado Acadêmico</h3>
-                <ul className="space-y-2 text-muted-fg">
+                <h3 className="text-xl font-bold mb-3">5 Ferramentas Mentais</h3>
+                <p className="text-sm text-muted-fg mb-3">
+                  Metodologia desenvolvida pelo Prof. Valter para programação mental nos níveis cerebrais (beta, alfa, teta e delta):
+                </p>
+                <ul className="space-y-2 text-muted-fg text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Técnicas de relaxamento e reprogramação mental</span>
+                    <span>Relaxamento e meditação guiada</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Fortalecimento da autoestima e segurança emocional</span>
+                    <span>Visualização criativa e reprogramação mental</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Métodos de investigação de fenômenos PSI</span>
+                    <span>Técnicas de autocura e autoconhecimento</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Formação de terapeutas e pesquisadores</span>
+                    <span>Vivência prática das Leis da Mente</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Investigação e desenvolvimento de fenômenos PSI</span>
                   </li>
                 </ul>
               </div>
