@@ -10,8 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Informações Institucionais */}
           <div>
-            <h3 className="text-lg font-bold mb-4">CIPASO</h3>
-            <img src={parametrosLogo} alt="CIPASO Logo" className="h-12 w-12 mb-4" />
+            <h3 className="text-lg font-bold mb-4 text-primary">CIPASO</h3>
             <p className="text-sm text-muted-fg mb-4">
               Centro de Investigação Parapsicológica de Sorocaba
             </p>

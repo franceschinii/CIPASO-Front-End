@@ -156,15 +156,28 @@ export function About() {
             </div>
 
             {/* Prof. Valter Franceschini */}
-            <div className="bg-primary/5 border border-primary/30 rounded-lg overflow-hidden">
-              <div className="grid md:grid-cols-[1fr_1.2fr] gap-0">
+            <div className="bg-primary/5 border border-primary/30 rounded-lg overflow-hidden p-8">
+              {/* Título */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="mb-8"
+              >
+                <h2 className="text-3xl font-bold mb-2 text-fg">Prof. Valter Franceschini</h2>
+                <p className="text-primary italic font-medium">In Memoriam — Mentor e Visionário</p>
+              </motion.div>
+
+              {/* Conteúdo em Grid */}
+              <div className="grid md:grid-cols-[350px_1fr] gap-8 items-start">
                 {/* Foto */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="relative aspect-3/4 overflow-hidden"
+                  className="relative aspect-3/4 overflow-hidden rounded-lg"
                 >
                   <img
                     src={valterPhoto}
@@ -179,30 +192,23 @@ export function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="p-8 flex flex-col justify-center space-y-6"
+                  className="space-y-4 text-lg text-muted-fg leading-relaxed"
                 >
-                  <div>
-                    <h2 className="text-3xl font-bold mb-2 text-fg">Prof. Valter Franceschini</h2>
-                    <p className="text-primary italic font-medium">In Memoriam — Mentor e Visionário</p>
-                  </div>
+                  <p>
+                    <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
+                  </p>
 
-                  <div className="space-y-4 text-lg text-muted-fg leading-relaxed">
-                    <p>
-                      <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
-                    </p>
+                  <p>
+                    Sua visão pioneira de unir <strong>ciência e humanismo</strong> moldou toda a filosofia institucional do Centro. Com mais de 55 anos de magistério, o Prof. Valter transformou inúmeras vidas através de suas metodologias inovadoras e sua dedicação incansável ao desenvolvimento integral do ser humano.
+                  </p>
 
-                    <p>
-                      Sua visão pioneira de unir <strong>ciência e humanismo</strong> moldou toda a filosofia institucional do Centro. Com mais de 55 anos de magistério, o Prof. Valter transformou inúmeras vidas através de suas metodologias inovadoras e sua dedicação incansável ao desenvolvimento integral do ser humano.
-                    </p>
+                  <p>
+                    Seu trabalho continua vivo através deste memorial digital, das centenas de alunos que formou ao longo de décadas, e do legado duradouro que deixou para as gerações futuras.
+                  </p>
 
-                    <p>
-                      Seu trabalho continua vivo através deste memorial digital, das centenas de alunos que formou ao longo de décadas, e do legado duradouro que deixou para as gerações futuras.
-                    </p>
-
-                    <blockquote className="border-l-4 border-primary pl-4 py-3 italic">
-                      "Sem Deus na vida, nada caminha."
-                    </blockquote>
-                  </div>
+                  <blockquote className="border-l-4 border-primary pl-4 py-3 italic">
+                    "Sem Deus na vida, nada caminha."
+                  </blockquote>
                 </motion.div>
               </div>
             </div>

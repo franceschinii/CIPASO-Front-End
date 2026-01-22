@@ -272,7 +272,7 @@ export function Acervo() {
               <div className="w-full flex flex-col lg:flex-row gap-6">
                 {/* Vídeo */}
                 <div className="w-full lg:flex-1">
-                  <div className="w-full aspect-video">
+                  <div className="w-full aspect-video max-h-80">
                     <video
                       src={selectedFile.path}
                       controls
