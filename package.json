@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node scripts/generateFilesJson.js && vite",
+    "build": "node scripts/generateFilesJson.js && tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "update-files": "node scripts/generateFilesJson.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

@@ -1,56 +1,11 @@
 [
   {
     "id": 1,
-    "titulo": "CIPASO: História e Missão",
-    "descricao": "Documento fundador do Centro de Investigação Parapsicológica de Sorocaba",
-    "categoria": "textos",
-    "data": "1989-06-15",
-    "path": "/acervo/pdfs/cipaso-historia.pdf",
-    "tipo": "pdf"
-  },
-  {
-    "id": 2,
-    "titulo": "Prof. Valter Franceschini - Biografia",
-    "descricao": "Trajetória completa do fundador e pesquisador pioneiro",
-    "categoria": "textos",
-    "data": "2020-03-10",
-    "path": "/acervo/pdfs/valter-biografia.pdf",
-    "tipo": "pdf"
-  },
-  {
-    "id": 3,
-    "titulo": "Fenômenos PSI: Uma Abordagem Científica",
-    "descricao": "Pesquisa acadêmica sobre telepatia, psicocinesia e vidência",
-    "categoria": "textos",
-    "data": "2005-08-22",
-    "path": "/acervo/pdfs/fenomenos-psi.pdf",
-    "tipo": "pdf"
-  },
-  {
-    "id": 4,
-    "titulo": "Foto Histórica - Fundação CIPASO 1989",
-    "descricao": "Registro do dia da fundação do centro em Sorocaba",
-    "categoria": "imagens",
-    "data": "1989-06-15",
-    "path": "/acervo/imagens/cipaso-1989-fundacao.jpg",
-    "tipo": "imagem"
-  },
-  {
-    "id": 5,
-    "titulo": "Prof. Valter - Anos 1990",
-    "descricao": "Registro fotográfico do professor durante palestras e pesquisas",
-    "categoria": "imagens",
-    "data": "1995-05-10",
-    "path": "/acervo/imagens/valter-1995.jpg",
-    "tipo": "imagem"
-  },
-  {
-    "id": 8,
-    "titulo": "Jornal Cruzeiro do Sul - Matéria CIPASO",
-    "descricao": "Publicação regional sobre as pesquisas e missão do centro",
-    "categoria": "jornais",
-    "data": "1995-07-15",
-    "path": "/acervo/jornais/cruzeiro-sul-1995.pdf",
-    "tipo": "jornal"
+    "titulo": "O que é Parapsicologia",
+    "descricao": "Vídeo - O que é Parapsicologia",
+    "categoria": "videos",
+    "data": "2026-01-22",
+    "path": "/uploads/videos/O que é Parapsicologia.mp4",
+    "tipo": "video"
   }
 ]
