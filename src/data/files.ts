@@ -13,9 +13,13 @@ export interface DigitalFile {
   tipo: FileType
 }
 
-export function getRandomFile(): DigitalFile {
-  const randomIndex = Math.floor(Math.random() * filesData.length)
-  return (filesData as DigitalFile[])[randomIndex]
+export function getRandomFile(excludeAudio = false): DigitalFile {
+  let availableFiles = filesData as DigitalFile[]
+  if (excludeAudio) {
+    availableFiles = availableFiles.filter(file => file.categoria !== 'audios')
+  }
+  const randomIndex = Math.floor(Math.random() * availableFiles.length)
+  return availableFiles[randomIndex]
 }
 
 export function getFilesByCategory(category: FileCategory): DigitalFile[] {
@@ -36,4 +40,11 @@ export function searchFiles(query: string): DigitalFile[] {
     file.titulo.toLowerCase().includes(lowerQuery) ||
     file.descricao.toLowerCase().includes(lowerQuery)
   )
+}
+
+export function getRandomVideo(): DigitalFile | undefined {
+  const videos = (filesData as DigitalFile[]).filter(file => file.categoria === 'videos')
+  if (videos.length === 0) return undefined
+  const randomIndex = Math.floor(Math.random() * videos.length)
+  return videos[randomIndex]
 }

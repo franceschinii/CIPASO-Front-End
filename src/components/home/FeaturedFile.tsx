@@ -26,7 +26,7 @@ export function FeaturedFile() {
   const [file, setFile] = useState<DigitalFile | null>(null)
 
   useEffect(() => {
-    setFile(getRandomFile())
+    setFile(getRandomFile(true))
   }, [])
 
   if (!file) {

@@ -45,24 +45,6 @@
     "tipo": "imagem"
   },
   {
-    "id": 6,
-    "titulo": "Meditação para Reprogramação Mental",
-    "descricao": "Fita de relaxamento e técnica de reprogramação mental positiva",
-    "categoria": "audios",
-    "data": "2000-01-10",
-    "path": "/acervo/audios/meditacao-reprogramacao.mp3",
-    "tipo": "audio"
-  },
-  {
-    "id": 7,
-    "titulo": "Palestra: Consciência e Parapsicologia",
-    "descricao": "Gravação de conferência histórica do Prof. Valter sobre PSI",
-    "categoria": "videos",
-    "data": "2002-11-20",
-    "path": "/acervo/videos/palestra-consciencia-psi.mp4",
-    "tipo": "video"
-  },
-  {
     "id": 8,
     "titulo": "Jornal Cruzeiro do Sul - Matéria CIPASO",
     "descricao": "Publicação regional sobre as pesquisas e missão do centro",
@@ -70,23 +52,5 @@
     "data": "1995-07-15",
     "path": "/acervo/jornais/cruzeiro-sul-1995.pdf",
     "tipo": "jornal"
-  },
-  {
-    "id": 9,
-    "titulo": "Parâmetros Holísticos - Catálogo de Publicações",
-    "descricao": "Listagem de livros e materiais educativos publicados",
-    "categoria": "livros",
-    "data": "2010-03-01",
-    "path": "/acervo/livros/parametros-catalogo.pdf",
-    "tipo": "livro"
-  },
-  {
-    "id": 10,
-    "titulo": "Enciclopédia da Parapsicologia Brasileira",
-    "descricao": "Compilação de pesquisas e fenômenos documentados no Brasil",
-    "categoria": "livros",
-    "data": "2012-09-18",
-    "path": "/acervo/livros/enciclopedia-parapsicologia.pdf",
-    "tipo": "livro"
   }
 ]

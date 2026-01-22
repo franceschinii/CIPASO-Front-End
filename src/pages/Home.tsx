@@ -1,5 +1,6 @@
 import { DailyQuote } from '@/components/home/DailyQuote'
 import { FeaturedFile } from '@/components/home/FeaturedFile'
+import { FeaturedVideo } from '@/components/home/FeaturedVideo'
 import { AboutValter } from '@/components/home/AboutValter'
 import { motion } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
@@ -98,6 +99,29 @@ export function Home() {
 
       {/* Seção Prof. Valter Franceschini */}
       <AboutValter />
+
+      {/* Seção Vídeo em Destaque */}
+      <section className="py-20 px-4 bg-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-fg">
+                Acervo em Vídeo
+              </h2>
+              <p className="text-lg text-muted-fg">
+                Palestras e documentos históricos em formato audiovisual
+              </p>
+            </div>
+
+            <FeaturedVideo />
+          </motion.div>
+        </div>
+      </section>
 
       {/* Seção Blog - Posts Recentes */}
       <section className="py-20 px-4 bg-bg">
@@ -212,19 +236,19 @@ export function Home() {
                 <h3 className="text-2xl font-bold mb-6 text-fg">Valores Fundamentais</h3>
                 <ul className="space-y-3 text-left">
                   <li className="flex items-start gap-3">
-                    <span className="text-primary text-xl font-bold mt-1">✓</span>
+                    <span className="text-primary mt-1">•</span>
                     <span>Investigação científica de fenômenos parapsicológicos</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-primary text-xl font-bold mt-1">✓</span>
+                    <span className="text-primary mt-1">•</span>
                     <span>Reprogramação mental positiva para segurança emocional</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-primary text-xl font-bold mt-1">✓</span>
+                    <span className="text-primary mt-1">•</span>
                     <span>Fortalecimento de vínculos familiares e comunitários</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-primary text-xl font-bold mt-1">✓</span>
+                    <span className="text-primary mt-1">•</span>
                     <span>Educação e divulgação científica acessível</span>
                   </li>
                 </ul>
