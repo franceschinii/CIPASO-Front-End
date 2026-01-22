@@ -188,10 +188,10 @@ export function About() {
                     />
                   </div>
 
-                  {/* Datas com Cruzinha */}
+                  {/* Datas com Ícones */}
                   <div className="space-y-2 text-sm text-muted-fg">
                     <div className="flex items-start gap-2">
-                      <span className="text-primary font-bold">✝</span>
+                      <span className="text-lg">🕊️</span>
                       <div>
                         <p><strong>Nascimento:</strong> 02/08/1940</p>
                         <p className="text-xs">Campinas, SP</p>
