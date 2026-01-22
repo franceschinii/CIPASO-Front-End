@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "titulo": "A Importância da Pesquisa Parapsicológica no Século XXI",
+    "slug": "pesquisa-parapsicologica-seculo-xxi",
+    "resumo": "Por que a investigação científica de fenômenos PSI continua sendo fundamental para compreender a consciência humana.",
+    "conteudo": "A parapsicologia oferece um caminho para investigar aspectos da consciência que vão além das metodologias tradicionais. Neste artigo, exploramos como a pesquisa científica rigorosa pode revelar novas dimensões da realidade.",
+    "autor": "Prof. Valter Franceschini",
+    "data": "2024-01-15",
+    "categoria": "pesquisa",
+    "tags": ["parapsicologia", "consciência", "ciência"]
+  },
+  {
+    "id": 2,
+    "titulo": "Reprogramação Mental: Primeiros Passos",
+    "slug": "reprogramacao-mental-primeiros-passos",
+    "resumo": "Um guia prático para iniciar sua jornada de reprogramação mental positiva e desenvolvimento pessoal.",
+    "conteudo": "A reprogramação mental é uma prática acessível a todos. Através de técnicas simples de meditação e visualização, você pode transformar seus padrões de pensamento e criar uma vida mais positiva.",
+    "autor": "Prof. Valter Franceschini",
+    "data": "2024-01-08",
+    "categoria": "desenvolvimento",
+    "tags": ["reprogramação", "meditação", "desenvolvimento pessoal"]
+  },
+  {
+    "id": 3,
+    "titulo": "Telepatia: Realidade ou Ficção Científica?",
+    "slug": "telepatia-realidade-ficcao",
+    "resumo": "Uma análise dos estudos experimentais sobre comunicação telepática ao longo das décadas.",
+    "conteudo": "Ao contrário do que muitos acreditam, a telepatia não é ficção. Estudos controlados realizados por institutos de pesquisa em todo o mundo documentam evidências de comunicação não-verbal entre indivíduos.",
+    "autor": "Prof. Valter Franceschini",
+    "data": "2023-12-28",
+    "categoria": "pesquisa",
+    "tags": ["telepatia", "psi", "experimentos"]
+  },
+  {
+    "id": 4,
+    "titulo": "O Legado da CIPASO: 35 Anos de Investigação",
+    "slug": "legado-cipaso-35-anos",
+    "resumo": "Reflexão sobre os marcos históricos, descobertas e contribuições da CIPASO para o conhecimento parapsicológico.",
+    "conteudo": "Desde sua fundação em 1989, a CIPASO tem mantido um compromisso inabalável com a excelência investigativa. Este artigo celebra os 35 anos de dedição à verdade científica.",
+    "autor": "Prof. Valter Franceschini",
+    "data": "2023-12-15",
+    "categoria": "institucional",
+    "tags": ["cipaso", "história", "legado"]
+  },
+  {
+    "id": 5,
+    "titulo": "Segurança Emocional Através da Consciência",
+    "slug": "seguranca-emocional-consciencia",
+    "resumo": "Como o desenvolvimento da consciência e autoconhecimento gera estabilidade emocional duradoura.",
+    "conteudo": "A segurança emocional não vem de fatores externos. Ela surge quando compreendemos profundamente quem somos e qual é nosso lugar no universo.",
+    "autor": "Prof. Valter Franceschini",
+    "data": "2023-12-01",
+    "categoria": "desenvolvimento",
+    "tags": ["consciência", "emocional", "autoconhecimento"]
+  }
+]

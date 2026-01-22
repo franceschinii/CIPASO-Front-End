@@ -1,38 +1,50 @@
 import { DailyQuote } from '@/components/home/DailyQuote'
+import { FeaturedFile } from '@/components/home/FeaturedFile'
 import { AboutValter } from '@/components/home/AboutValter'
 import { motion } from 'framer-motion'
-import { ArrowRight, Library, Users, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
+import { ArrowRightIcon, BookOpenIcon, UsersIcon, DocumentTextIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
+import { getRecentPosts } from '@/data/blog'
 
 export function Home() {
+  const recentPosts = getRecentPosts(3)
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-bg">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto max-w-6xl">
+      <section className="relative pt-20 pb-16 px-4 md:pt-32 md:pb-24 bg-linear-to-b from-primary/5 via-bg to-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Memorial Digital CIPASO
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-fg leading-tight">
+              Memorial Digital
+              <br />
+              <span className="text-primary">CIPASO</span>
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-fg max-w-3xl mx-auto leading-relaxed font-light">
               Centro de Investigação Parapsicológica de Sorocaba — Preservando a história da
-              parapsicologia científica e do desenvolvimento humano
+              investigação científica, desenvolvimento humano e o legado do Prof. Valter Franceschini
             </p>
           </motion.div>
 
-          {/* Citação do Dia */}
+          {/* Grid de Destaque: Citação + Arquivo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-12"
+            className="grid md:grid-cols-2 gap-8 mb-16"
           >
-            <DailyQuote />
+            <div>
+              <DailyQuote />
+            </div>
+            <div>
+              <FeaturedFile />
+            </div>
           </motion.div>
 
           {/* Cards de Destaque */}
@@ -45,38 +57,38 @@ export function Home() {
             {/* Card Acervo */}
             <Link
               to="/acervo"
-              className="group relative bg-background border border-primary/20 rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+              className="group relative bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
             >
-              <Library className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Acervo Digital</h3>
-              <p className="text-foreground/70 mb-4">
+              <BookOpenIcon className="h-12 w-12 text-primary mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-bold mb-2 text-fg">Acervo Digital</h3>
+              <p className="text-muted-fg mb-6">
                 Explore documentos, imagens, áudios e vídeos históricos
               </p>
               <span className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                Explorar <ArrowRight className="h-4 w-4" />
+                Explorar <ArrowRightIcon className="h-4 w-4" />
               </span>
             </Link>
 
             {/* Card História */}
-            <div className="relative bg-background border border-primary/20 rounded-xl p-6">
-              <Users className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Nossa História</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="relative bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+              <UsersIcon className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-fg">Nossa História</h3>
+              <p className="text-muted-fg mb-6">
                 Fundado em 1989, o CIPASO é referência em pesquisa parapsicológica
               </p>
-              <span className="inline-flex items-center gap-2 text-foreground/50 font-medium">
+              <span className="inline-flex items-center gap-2 text-primary font-medium">
                 Desde 1989
               </span>
             </div>
 
             {/* Card Missão */}
-            <div className="relative bg-background border border-primary/20 rounded-xl p-6">
-              <Sparkles className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Nossa Missão</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="relative bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+              <Sparkles className="h-12 w-12 text-primary mb-4" fill="currentColor" />
+              <h3 className="text-xl font-bold mb-2 text-fg">Nossa Missão</h3>
+              <p className="text-muted-fg mb-6">
                 Investigação científica de fenômenos PSI e desenvolvimento humano
               </p>
-              <span className="inline-flex items-center gap-2 text-foreground/50 font-medium">
+              <span className="inline-flex items-center gap-2 text-primary font-medium">
                 Pesquisa & Humanismo
               </span>
             </div>
@@ -87,9 +99,87 @@ export function Home() {
       {/* Seção Prof. Valter Franceschini */}
       <AboutValter />
 
+      {/* Seção Blog - Posts Recentes */}
+      <section className="py-20 px-4 bg-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-fg">
+                Posts Recentes
+              </h2>
+              <p className="text-lg text-muted-fg">
+                Investigação, desenvolvimento humano e pesquisa em parapsicologia
+              </p>
+            </div>
+
+            {/* Cards de Blog */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {recentPosts.map((post, index) => (
+                <motion.article
+                  key={post.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col"
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <DocumentTextIcon className="h-5 w-5 text-primary" />
+                    <span className="text-xs uppercase tracking-wide text-primary font-semibold">
+                      {post.categoria}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-bold mb-3 text-fg leading-snug">
+                    {post.titulo}
+                  </h3>
+
+                  <p className="text-muted-fg mb-4 grow">
+                    {post.resumo}
+                  </p>
+
+                  <div className="flex items-center justify-between pt-4 border-t border-muted text-sm text-muted-fg">
+                    <span>
+                      {new Date(post.data).toLocaleDateString('pt-BR', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                      })}
+                    </span>
+                    <span className="text-primary font-medium">Ler mais →</span>
+                  </div>
+                </motion.article>
+              ))}
+            </div>
+
+            {/* CTA para Blog Completo */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mt-12"
+            >
+              <Link
+                to="/blog"
+                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary transition-all hover:gap-3 group"
+              >
+                Ver Todos os Posts
+                <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Seção Institucional */}
-      <section className="py-16 px-4 bg-background">
-        <div className="container mx-auto max-w-4xl">
+      <section className="py-20 px-4 bg-primary/5">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -97,44 +187,44 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold mb-6">Sobre o CIPASO</h2>
-            <div className="prose prose-lg max-w-none text-foreground/80">
-              <p className="mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Sobre o CIPASO</h2>
+            <div className="space-y-6 text-lg text-muted-fg leading-relaxed">
+              <p>
                 O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> foi
                 fundado em <strong>1989</strong> (CNPJ 58.984.089/0001-58) com a missão de
                 investigar fenômenos PSI e parapsicologia sob uma abordagem científica e
                 humanística.
               </p>
 
-              <p className="mb-4">
+              <p>
                 Localizado na histórica <strong>Rua Oswaldo Segamarchi, 15, Jardim Santa Rosália,
                 Sorocaba/SP</strong>, o centro se tornou referência regional em estudos de
                 reprogramação mental positiva e desenvolvimento humano.
               </p>
 
-              <p className="mb-6">
+              <p>
                 Em estreita colaboração com a <strong>Parâmetros Holísticos de Formação
                 Humana</strong> (CNPJ 67.361.410/0001-39), o CIPASO expandiu suas atividades para
                 formação de profissionais e pesquisa aplicada.
               </p>
 
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-3">Valores Fundamentais</h3>
-                <ul className="text-left space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+              <div className="bg-white dark:bg-muted border border-primary/30 rounded-lg p-8 mt-8">
+                <h3 className="text-2xl font-bold mb-6 text-fg">Valores Fundamentais</h3>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl font-bold mt-1">✓</span>
                     <span>Investigação científica de fenômenos parapsicológicos</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl font-bold mt-1">✓</span>
                     <span>Reprogramação mental positiva para segurança emocional</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl font-bold mt-1">✓</span>
                     <span>Fortalecimento de vínculos familiares e comunitários</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl font-bold mt-1">✓</span>
                     <span>Educação e divulgação científica acessível</span>
                   </li>
                 </ul>

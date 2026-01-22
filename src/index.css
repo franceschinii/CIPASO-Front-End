@@ -1,89 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Sutro W01';
+  src: url('src/assets/fonts/SutroW01-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+}
+
 @theme {
-  /* Cores CIPASO */
-  --color-primary: #E9A356;
-  --color-secondary: #F4B068;
+  /* Core Colors - Tailwind v4 */
+  --color-primary: #5CBDBF;
+  --color-secondary: #4A9D9F;
+  --color-accent: #7AD4D6;
 
-  /* Light Mode */
-  --color-background: #FBE4CB;
-  --color-foreground: #2D241E;
+  /* Semantic Colors - Light Mode */
+  --color-bg: #FFFFFF;
+  --color-fg: #000000;
+  --color-muted: #F5F5F5;
+  --color-muted-fg: #666666;
+  --color-border: #E5E5E5;
 
-  /* Dark Mode (configurado via classe .dark) */
-  --color-background-dark: #1A1512;
-  --color-foreground-dark: #FBE4CB;
+  /* Semantic Colors - Dark Mode */
+  --color-bg-dark: #0A0A0A;
+  --color-fg-dark: #F0F0F0;
+  --color-muted-dark: #1A1A1A;
+  --color-muted-fg-dark: #A0A0A0;
+  --color-border-dark: #2A2A2A;
 
-  /* Tipografia */
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Inter', sans-serif;
+  /* Typography */
+  --font-display: 'Sutro W01', system-ui, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
 
-  /* Sombras e Profundidade */
-  --shadow-sm: 0 1px 2px 0 rgb(45 36 30 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(45 36 30 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(45 36 30 / 0.1);
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 
-  /* Bordas e Raios */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Radius */
+  --radius: 0.5rem;
 }
 
-/* Aplicação global de tipografia */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-bg text-fg leading-relaxed antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-black leading-tight -tracking-wider;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  /* Dark Mode Support */
+  @supports (color: var(--color-bg-dark)) {
+    html.dark {
+      --color-bg: var(--color-bg-dark);
+      --color-fg: var(--color-fg-dark);
+      --color-muted: var(--color-muted-dark);
+      --color-muted-fg: var(--color-muted-fg-dark);
+      --color-border: var(--color-border-dark);
+    }
+  }
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Aplicar fonte serif em títulos */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-/* Dark mode override */
-.dark {
-  --color-background: var(--color-background-dark);
-  --color-foreground: var(--color-foreground-dark);
-}
-
-/* Scrollbar customizada (tema CIPASO) */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-background);
+  background: var(--color-bg);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-primary);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-secondary);
 }
 
-/* Transições suaves globais */
-* {
-  transition-property: color, background-color, border-color, box-shadow;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+/* Smooth Transitions */
+@layer components {
+  @apply *:transition-colors *:duration-200 *:ease-in-out;
 }
 
-/* Remove transições em animações Framer Motion */
+/* Framer Motion Optimization */
 [data-framer-motion] * {
-  transition: none !important;
+  @apply transition-none!;
 }

@@ -3,8 +3,8 @@ import valterPhoto from '@/assets/png/vaf/VAF-1.jpg'
 
 export function AboutValter() {
   return (
-    <section className="py-16 bg-gradient-to-b from-background to-primary/5">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-linear-to-b from-bg to-primary/5">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export function AboutValter() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Prof. Valter Franceschini
             </h2>
-            <p className="text-xl text-foreground/70 italic">
+            <p className="text-xl text-muted-fg italic">
               In Memoriam — Mentor e Visionário
             </p>
           </div>
@@ -68,15 +68,15 @@ export function AboutValter() {
                 <p className="text-lg italic mb-2">
                   "Viver melhor não é ter mais, é ser mais consciente de si mesmo e do mundo ao redor."
                 </p>
-                <cite className="text-sm text-foreground/70 not-italic">
+                <cite className="text-sm text-muted-fg not-italic">
                   — Prof. Valter Franceschini
                 </cite>
               </blockquote>
 
               {/* Legado */}
-              <div className="bg-background border border-primary/20 rounded-lg p-6">
+              <div className="bg-bg border border-primary/20 rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-3">Legado Acadêmico</h3>
-                <ul className="space-y-2 text-foreground/80">
+                <ul className="space-y-2 text-muted-fg">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>Técnicas de relaxamento e reprogramação mental</span>
@@ -96,7 +96,7 @@ export function AboutValter() {
                 </ul>
               </div>
 
-              <p className="text-sm text-foreground/60 italic pt-4">
+              <p className="text-sm text-muted-fg italic pt-4">
                 Seu trabalho continua vivo através deste memorial digital e das centenas de
                 alunos que formou ao longo de décadas de magistério.
               </p>

@@ -15,13 +15,19 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b border-primary/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex flex-col">
-            <h1 className="text-2xl font-bold text-primary">CIPASO</h1>
-            <span className="text-xs text-foreground/70">Centro de Investigação Parapsicológica</span>
+    <header className="sticky top-0 z-50 border-b border-muted bg-bg/95 backdrop-blur supports-backdrop-filter:bg-bg/80 shadow-sm">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo/Branding */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="flex flex-col gap-0.5">
+              <span className="text-2xl font-black text-primary tracking-tight leading-none font-display">
+                CIPASO
+              </span>
+              <span className="text-xs text-muted-fg font-medium tracking-wide hidden sm:block">
+                Centro de Investigação Parapsicológica de Sorocaba
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -30,38 +36,53 @@ export function Header() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-sm font-medium transition-colors hover:text-primary"
+                className="text-sm font-medium text-muted-fg hover:text-primary transition-colors relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </Link>
             ))}
 
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="rounded-md p-2 hover:bg-primary/10 transition-colors"
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
               aria-label="Alternar tema"
             >
               {isDark ? (
-                <Sun className="h-5 w-5 text-primary" />
+                <Sun className="h-5 w-5 text-primary" fill="currentColor" />
               ) : (
-                <Moon className="h-5 w-5 text-primary" />
+                <Moon className="h-5 w-5 text-primary" fill="currentColor" />
               )}
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden rounded-md p-2 hover:bg-primary/10"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {/* Mobile Menu Button + Theme Toggle */}
+          <div className="flex items-center gap-1 md:hidden">
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+              aria-label="Alternar tema"
+            >
+              {isDark ? (
+                <Sun className="h-5 w-5 text-primary" fill="currentColor" />
+              ) : (
+                <Moon className="h-5 w-5 text-primary" fill="currentColor" />
+              )}
+            </button>
+
+            <button
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5 text-fg" fill="currentColor" />
+              ) : (
+                <Menu className="h-5 w-5 text-fg" fill="currentColor" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -72,39 +93,19 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-primary/20"
+            className="md:hidden border-t border-muted bg-bg"
           >
-            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  className="text-sm font-medium py-2 transition-colors hover:text-primary"
+                  className="text-sm font-medium py-2 px-3 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-
-              <button
-                onClick={() => {
-                  toggleTheme()
-                  setMobileMenuOpen(false)
-                }}
-                className="flex items-center gap-2 text-sm font-medium py-2 hover:text-primary"
-              >
-                {isDark ? (
-                  <>
-                    <Sun className="h-5 w-5" />
-                    Tema Claro
-                  </>
-                ) : (
-                  <>
-                    <Moon className="h-5 w-5" />
-                    Tema Escuro
-                  </>
-                )}
-              </button>
             </nav>
           </motion.div>
         )}
