@@ -10,42 +10,42 @@ export interface Quote {
 export const quotes: Quote[] = [
   {
     id: 1,
-    content: 'A verdadeira transformação começa quando paramos de buscar validação externa e encontramos segurança dentro de nós mesmos.',
+    content: 'O seu corpo reage de acordo com como age a sua mente.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 2,
-    content: 'Viver melhor não é acumular bens materiais, mas cultivar consciência, autoconhecimento e conexões humanas genuínas.',
+    content: 'Parapsicologia é uma ciência experimental que estuda, identifica e classifica os fenômenos exteriorizados através da paranormalidade.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 3,
-    content: 'A investigação parapsicológica séria não nega a ciência, mas expande suas fronteiras com rigor e ética.',
+    content: 'Paranormalidade é uma capacidade humana de percepção hiperestésica e de conhecimento extrasensorial, não convencional.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 4,
-    content: 'O relaxamento profundo não é escapismo, é o portal para a reprogramação consciente de padrões mentais limitantes.',
+    content: 'Pensamentos destrutivos, pensamentos negativos, eles vão somente atrair aquilo que não serve, aquilo que prejudica.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 5,
-    content: 'Família fortalecida não é aquela sem conflitos, mas aquela que aprende a dialogar com respeito e empatia autênticos.',
+    content: 'Sem Deus na vida, nada caminha.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 6,
-    content: 'A mente humana é um universo inexplorado. Cada pesquisa em parapsicologia é uma jornada de descoberta interior.',
+    content: 'Não é salutar tornar fantasias negativas e doentias inconscientes como modelos e realidades da vida.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 7,
-    content: 'Segurança emocional não vem de controlar tudo ao redor, mas de confiar na própria capacidade de adaptação e crescimento.',
+    content: 'A parapsicologia, com a metodologia que nós divulgamos há mais de 55 anos, tem ajudado muitas pessoas a terem uma vida melhor, mais alegre, mais feliz, mais saudável.',
     author: 'Prof. Valter Franceschini'
   },
   {
     id: 8,
-    content: 'O propósito do CIPASO sempre foi democratizar o acesso ao autoconhecimento e à investigação séria dos fenômenos da consciência.',
+    content: 'Você precisa programar a sua mente nos níveis mentais: beta, alfa, teta e delta.',
     author: 'Prof. Valter Franceschini'
   }
 ]

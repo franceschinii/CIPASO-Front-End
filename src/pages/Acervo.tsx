@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon } from '@heroicons/react/24/solid'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import { getAllFiles, type FileCategory } from '@/data/files'
 import { Modal } from '@/components/common/Modal'
 
@@ -22,16 +23,17 @@ const categoryIcons: Record<string, React.ReactNode> = {
   livros: <BookOpenIcon className="h-6 w-6" />
 }
 
+type SortOption = 'recent' | 'older' | 'az' | 'za'
+
 export function Acervo() {
   const allFiles = getAllFiles()
   const [selectedCategory, setSelectedCategory] = useState<FileCategory | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [sortBy, setSortBy] = useState<SortOption>('recent')
   const [selectedFile, setSelectedFile] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const categories = Array.from(new Set(allFiles.map(f => f.categoria))) as FileCategory[]
-  const filteredFiles = selectedCategory
-    ? allFiles.filter(f => f.categoria === selectedCategory)
-    : allFiles
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('pt-BR', {
@@ -40,6 +42,36 @@ export function Acervo() {
       day: 'numeric'
     })
   }
+
+  // Filtrar por categoria
+  let filtered = selectedCategory
+    ? allFiles.filter(f => f.categoria === selectedCategory)
+    : allFiles
+
+  // Filtrar por busca
+  if (searchQuery) {
+    const query = searchQuery.toLowerCase()
+    filtered = filtered.filter(f =>
+      f.titulo.toLowerCase().includes(query) ||
+      f.descricao.toLowerCase().includes(query)
+    )
+  }
+
+  // Ordenar
+  const sorted = [...filtered].sort((a, b) => {
+    switch (sortBy) {
+      case 'recent':
+        return new Date(b.data).getTime() - new Date(a.data).getTime()
+      case 'older':
+        return new Date(a.data).getTime() - new Date(b.data).getTime()
+      case 'az':
+        return a.titulo.localeCompare(b.titulo)
+      case 'za':
+        return b.titulo.localeCompare(a.titulo)
+      default:
+        return 0
+    }
+  })
 
   const openModal = (file: any) => {
     setSelectedFile(file)
@@ -54,7 +86,7 @@ export function Acervo() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-fg">
             Acervo Digital
@@ -64,17 +96,37 @@ export function Acervo() {
           </p>
         </motion.div>
 
-        {/* Filtros */}
+        {/* Barra de Busca */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+          className="mb-8"
+        >
+          <div className="relative">
+            <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-fg" />
+            <input
+              type="text"
+              placeholder="Buscar arquivos..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-12 pr-4 py-3 bg-muted border border-muted rounded-lg text-fg placeholder-muted-fg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+            />
+          </div>
+        </motion.div>
+
+        {/* Filtros e Ordenação */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-12"
+          className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
         >
-          <div className="flex flex-wrap gap-3 justify-center">
+          {/* Filtros de Categoria */}
+          <div className="flex flex-wrap gap-2 overflow-x-auto pb-2">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all ${
+              className={`px-4 py-2 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
                 selectedCategory === null
                   ? 'bg-primary text-white'
                   : 'bg-muted text-fg hover:border-primary border border-muted'
@@ -89,7 +141,7 @@ export function Acervo() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all flex items-center gap-2 ${
+                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all whitespace-nowrap flex items-center gap-1 ${
                     selectedCategory === category
                       ? 'bg-primary text-white'
                       : 'bg-muted text-fg hover:border-primary border border-muted'
@@ -101,18 +153,35 @@ export function Acervo() {
               )
             })}
           </div>
+
+          {/* Ordenação */}
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            className="px-4 py-2 bg-muted border border-muted rounded-lg text-fg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm"
+          >
+            <option value="recent">Mais Recentes</option>
+            <option value="older">Mais Antigos</option>
+            <option value="az">A → Z</option>
+            <option value="za">Z → A</option>
+          </select>
         </motion.div>
 
         {/* Grid de Arquivos */}
-        {filteredFiles.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredFiles.map((file, index) => (
+        {sorted.length > 0 ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[80vh] overflow-y-auto pr-2"
+          >
+            {sorted.map((file, index) => (
               <motion.div
                 key={file.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
                 className="group bg-white dark:bg-muted border border-muted rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col"
               >
                 {/* Ícone Categoria */}
@@ -154,7 +223,7 @@ export function Acervo() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
@@ -162,7 +231,7 @@ export function Acervo() {
             className="text-center py-20"
           >
             <p className="text-xl text-muted-fg">
-              Nenhum arquivo encontrado nesta categoria.
+              Nenhum arquivo encontrado.
             </p>
           </motion.div>
         )}
@@ -196,32 +265,50 @@ export function Acervo() {
                 </div>
               </div>
             ) : selectedFile.categoria === 'videos' ? (
-              <div className="w-full">
-                <div className="w-full aspect-video mb-6">
-                  <video
-                    src={selectedFile.path}
-                    controls
-                    autoPlay
-                    className="w-full h-full rounded-lg"
-                  />
+              <div className="w-full flex flex-col lg:flex-row gap-6">
+                {/* Vídeo */}
+                <div className="w-full lg:flex-1">
+                  <div className="w-full aspect-video">
+                    <video
+                      src={selectedFile.path}
+                      controls
+                      autoPlay
+                      className="w-full h-full rounded-lg"
+                    />
+                  </div>
                 </div>
-                <p className="text-muted-fg text-sm mb-4">{selectedFile.descricao}</p>
-                <div className="flex gap-3">
-                  <a
-                    href={selectedFile.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
-                  >
-                    Abrir em Tela Cheia
-                  </a>
-                  <a
-                    href={selectedFile.path}
-                    download
-                    className="flex-1 text-center bg-primary/20 text-primary py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
-                  >
-                    Baixar
-                  </a>
+
+                {/* Info e Botões */}
+                <div className="w-full lg:w-64 flex flex-col gap-4">
+                  <div>
+                    <h4 className="text-xs uppercase tracking-wide text-primary font-semibold mb-2">
+                      {categoryLabels[selectedFile.categoria]}
+                    </h4>
+                    <h3 className="text-lg font-bold text-fg mb-2">
+                      {selectedFile.titulo}
+                    </h3>
+                    <p className="text-sm text-muted-fg mb-4">
+                      {selectedFile.descricao}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <a
+                      href={selectedFile.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full text-center bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+                    >
+                      Abrir em Tela Cheia
+                    </a>
+                    <a
+                      href={selectedFile.path}
+                      download
+                      className="w-full text-center bg-primary/20 text-primary py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
+                    >
+                      Baixar Vídeo
+                    </a>
+                  </div>
                 </div>
               </div>
             ) : (
