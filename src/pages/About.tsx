@@ -198,6 +198,11 @@ export function About() {
                     <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
                   </p>
 
+                  <p className="text-sm text-muted-fg">
+                    <strong>Nascimento:</strong> 02 de agosto de 1940 em Campinas, SP<br />
+                    <strong>Falecimento:</strong> 18 de fevereiro de 2016 em Sorocaba, SP (aos 75 anos)
+                  </p>
+
                   <p>
                     Sua visão pioneira de unir <strong>ciência e humanismo</strong> moldou toda a filosofia institucional do Centro. Com mais de 55 anos de magistério, o Prof. Valter transformou inúmeras vidas através de suas metodologias inovadoras e sua dedicação incansável ao desenvolvimento integral do ser humano.
                   </p>
