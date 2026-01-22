@@ -171,19 +171,40 @@ export function About() {
 
               {/* Conteúdo em Grid */}
               <div className="grid md:grid-cols-[350px_1fr] gap-8 items-start">
-                {/* Foto */}
+                {/* Coluna Esquerda: Foto + Datas */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="relative aspect-3/4 overflow-hidden rounded-lg"
+                  className="space-y-4"
                 >
-                  <img
-                    src={valterPhoto}
-                    alt="Prof. Valter Franceschini"
-                    className="w-full h-full object-cover"
-                  />
+                  {/* Foto */}
+                  <div className="relative aspect-3/4 overflow-hidden rounded-lg">
+                    <img
+                      src={valterPhoto}
+                      alt="Prof. Valter Franceschini"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Datas com Cruzinha */}
+                  <div className="space-y-2 text-sm text-muted-fg">
+                    <div className="flex items-start gap-2">
+                      <span className="text-primary font-bold">✝</span>
+                      <div>
+                        <p><strong>Nascimento:</strong> 02/08/1940</p>
+                        <p className="text-xs">Campinas, SP</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-primary font-bold">✝</span>
+                      <div>
+                        <p><strong>Falecimento:</strong> 18/02/2016</p>
+                        <p className="text-xs">Sorocaba, SP (75 anos)</p>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
 
                 {/* Conteúdo */}
@@ -196,11 +217,6 @@ export function About() {
                 >
                   <p>
                     <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
-                  </p>
-
-                  <p className="text-sm text-muted-fg">
-                    <strong>Nascimento:</strong> 02 de agosto de 1940 em Campinas, SP<br />
-                    <strong>Falecimento:</strong> 18 de fevereiro de 2016 em Sorocaba, SP (aos 75 anos)
                   </p>
 
                   <p>
