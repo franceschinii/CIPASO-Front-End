@@ -191,7 +191,7 @@ export function About() {
                   {/* Datas com Ícones */}
                   <div className="space-y-2 text-sm text-muted-fg">
                     <div className="flex items-start gap-2">
-                      <span className="text-lg">🌟</span>
+                      <div className="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0" />
                       <div>
                         <p><strong>Nascimento:</strong> 02/08/1940</p>
                         <p className="text-xs">Campinas, SP</p>
