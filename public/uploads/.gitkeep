@@ -1,0 +1,28 @@
+# Estrutura de Pastas para Arquivos do Acervo
+
+Coloque seus arquivos nas pastas corretas:
+
+- documentos/ → PDFs, DOCs
+- imagens/ → JPG, PNG
+- audios/ → MP3, WAV
+- videos/ → MP4, AVI
+- hemeroteca/ → Recortes de jornal (imagens)
+- publicacoes/ → Apostilas, livros (PDFs)
+
+Exemplo:
+uploads/
+├── documentos/
+│   └── estatuto-cipaso-1989.pdf
+├── imagens/
+│   └── sede-santa-rosalia-1995.jpg
+├── audios/
+│   └── relaxamento-reprogramacao-vol1.mp3
+├── videos/
+│   └── palestra-fenomenos-psi-2005.mp4
+├── hemeroteca/
+│   └── diario-sorocaba-workshop-1998.jpg
+└── publicacoes/
+    └── apostila-introducao-parapsicologia.pdf
+
+Depois de adicionar arquivos, registre-os em:
+src/data/archive.ts
