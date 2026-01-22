@@ -198,7 +198,7 @@ export function About() {
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-primary font-bold">✝</span>
+                      <span className="text-lg">✨</span>
                       <div>
                         <p><strong>Falecimento:</strong> 18/02/2016</p>
                         <p className="text-xs">Sorocaba, SP (75 anos)</p>
