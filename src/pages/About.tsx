@@ -191,14 +191,14 @@ export function About() {
                   {/* Datas com Ícones */}
                   <div className="space-y-2 text-sm text-muted-fg">
                     <div className="flex items-start gap-2">
-                      <span className="text-lg">🕊️</span>
+                      <span className="text-lg">🌟</span>
                       <div>
                         <p><strong>Nascimento:</strong> 02/08/1940</p>
                         <p className="text-xs">Campinas, SP</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-lg">✨</span>
+                      <span className="text-primary font-bold">✝</span>
                       <div>
                         <p><strong>Falecimento:</strong> 18/02/2016</p>
                         <p className="text-xs">Sorocaba, SP (75 anos)</p>
