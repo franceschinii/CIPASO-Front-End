@@ -23,16 +23,16 @@ export function AboutValter() {
           </div>
 
           {/* Conteúdo Principal */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start lg:items-center">
             {/* Fotografia */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
+              className="relative order-2 lg:order-1"
             >
-              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl border-4 border-primary/20">
+              <div className="w-full max-w-sm mx-auto lg:max-w-none aspect-[2.5/3.5] sm:aspect-3/4 rounded-lg overflow-hidden shadow-2xl border-4 border-primary/20">
                 <img
                   src={valterPhoto}
                   alt="Prof. Valter Franceschini"
@@ -41,7 +41,7 @@ export function AboutValter() {
               </div>
 
               {/* Decoração */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10 hidden sm:block" />
             </motion.div>
 
             {/* Biografia */}

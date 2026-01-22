@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/generateFilesJson.js && vite",
-    "build": "node scripts/generateFilesJson.js && tsc && vite build",
+    "generate": "node scripts/generateFilesJson.js && node scripts/generateBlogJson.js",
+    "dev": "npm run generate && vite",
+    "build": "npm run generate && tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "update-files": "node scripts/generateFilesJson.js"
+    "update-files": "node scripts/generateFilesJson.js",
+    "update-blog": "node scripts/generateBlogJson.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

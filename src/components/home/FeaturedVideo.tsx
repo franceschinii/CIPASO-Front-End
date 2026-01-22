@@ -3,9 +3,11 @@ import { FilmIcon, ArrowRightIcon } from '@heroicons/react/24/solid'
 import { getRandomVideo } from '@/data/files'
 import { useEffect, useState } from 'react'
 import { type DigitalFile } from '@/data/files'
+import { Modal } from '@/components/common/Modal'
 
 export function FeaturedVideo() {
   const [video, setVideo] = useState<DigitalFile | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
     const randomVideo = getRandomVideo()
@@ -55,19 +57,43 @@ export function FeaturedVideo() {
           {video.descricao}
         </p>
 
-        {/* CTA Button */}
-        <a
-          href={video.path}
-          download
-          className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-all hover:gap-3 group"
-        >
-          Baixar Vídeo
-          <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-        </a>
+        {/* CTA Buttons */}
+        <div className="flex gap-3 flex-wrap">
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-all hover:gap-3 group"
+          >
+            Assistir
+            <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+          <a
+            href={video.path}
+            download
+            className="inline-flex items-center gap-2 bg-primary/20 text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
+          >
+            Baixar
+          </a>
+        </div>
       </div>
 
       {/* Decoração de fundo */}
       <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl" />
+
+      {/* Modal para assistir em fullscreen */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title={video.titulo}
+      >
+        <div className="w-full aspect-video">
+          <video
+            src={video.path}
+            controls
+            autoPlay
+            className="w-full h-full rounded-lg"
+          />
+        </div>
+      </Modal>
     </motion.div>
   )
 }

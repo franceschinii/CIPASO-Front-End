@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-muted bg-bg mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Informações Institucionais */}
           <div>
             <h3 className="text-lg font-bold mb-4">CIPASO</h3>
@@ -31,27 +31,36 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Contato */}
+          <div>
+            <h3 className="text-lg font-bold mb-4">Contato</h3>
+            <div className="space-y-3 text-sm text-muted-fg">
+              <div className="flex items-center gap-2">
+                <EnvelopeIcon className="h-4 w-4 shrink-0" />
+                <a href="mailto:contato@andrefranceschini.com.br" className="hover:text-primary transition-colors break-all">
+                  contato@andrefranceschini.com.br
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <PhoneIcon className="h-4 w-4 shrink-0" />
+                <a href="tel:+5515997234932" className="hover:text-primary transition-colors">
+                  +55 (15) 99723-4932
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Localização Histórica */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Localização Histórica</h3>
+            <h3 className="text-lg font-bold mb-4">Localização</h3>
             <div className="space-y-3 text-sm text-muted-fg">
               <div className="flex items-start gap-2">
                 <MapPinIcon className="h-4 w-4 mt-0.5 shrink-0" />
                 <p>
                   Rua Oswaldo Segamarchi, 15<br />
-                  Jardim Santa Rosália<br />
-                  Sorocaba/SP - CEP 18090-050
+                  Sorocaba/SP
                 </p>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <PhoneIcon className="h-4 w-4 shrink-0" />
-                <p>(15) 231.0958 / 231.7750</p>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <EnvelopeIcon className="h-4 w-4 shrink-0" />
-                <p>franceschini.psi@uol.com.br</p>
               </div>
             </div>
           </div>

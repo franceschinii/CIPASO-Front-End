@@ -1,57 +1,17 @@
 [
   {
     "id": 1,
-    "titulo": "A Importância da Pesquisa Parapsicológica no Século XXI",
-    "slug": "pesquisa-parapsicologica-seculo-xxi",
-    "resumo": "Por que a investigação científica de fenômenos PSI continua sendo fundamental para compreender a consciência humana.",
-    "conteudo": "A parapsicologia oferece um caminho para investigar aspectos da consciência que vão além das metodologias tradicionais. Neste artigo, exploramos como a pesquisa científica rigorosa pode revelar novas dimensões da realidade.",
+    "titulo": "Seu Artigo Aqui",
+    "slug": "seu-artigo-aqui",
+    "resumo": "Um resumo breve do seu artigo que aparece na listagem",
+    "conteudo": "Aqui vai o conteúdo completo do seu artigo em Markdown.\n\n## Seção 1\nEscreva seu conteúdo aqui.\n\n## Seção 2\nMais conteúdo...\n\n---\n\n**INSTRUÇÕES:**\n1. Crie um arquivo .md na pasta \"posts\" com seu conteúdo\n2. Preencha o frontmatter (tudo entre ---) com:\n   - titulo: Título do artigo\n   - slug: URL-friendly (ex: meu-artigo)\n   - resumo: Resumo curto (aparece na listagem)\n   - autor: Nome do autor (padrão: Prof. Valter Franceschini)\n   - data: Data (YYYY-MM-DD)\n   - categoria: pesquisa | desenvolvimento | institucional\n   - tags: Vírgula separada por vírgulas\n3. Execute: npm run update-blog\n4. Seu artigo aparecerá automaticamente no site\n\n**Alternativa (JSON):**\nVocê também pode criar um arquivo .json na pasta \"posts\" com este formato:\n\n```json\n{\n  \"titulo\": \"Seu Artigo\",\n  \"slug\": \"seu-artigo\",\n  \"resumo\": \"Resumo breve\",\n  \"conteudo\": \"Conteúdo completo em HTML ou Markdown\",\n  \"autor\": \"Prof. Valter Franceschini\",\n  \"data\": \"2024-01-22\",\n  \"categoria\": \"pesquisa\",\n  \"tags\": [\"parapsicologia\", \"consciência\"]\n}\n```\n\nExecute: npm run update-blog",
     "autor": "Prof. Valter Franceschini",
-    "data": "2024-01-15",
+    "data": "2024-01-22",
     "categoria": "pesquisa",
-    "tags": ["parapsicologia", "consciência", "ciência"]
-  },
-  {
-    "id": 2,
-    "titulo": "Reprogramação Mental: Primeiros Passos",
-    "slug": "reprogramacao-mental-primeiros-passos",
-    "resumo": "Um guia prático para iniciar sua jornada de reprogramação mental positiva e desenvolvimento pessoal.",
-    "conteudo": "A reprogramação mental é uma prática acessível a todos. Através de técnicas simples de meditação e visualização, você pode transformar seus padrões de pensamento e criar uma vida mais positiva.",
-    "autor": "Prof. Valter Franceschini",
-    "data": "2024-01-08",
-    "categoria": "desenvolvimento",
-    "tags": ["reprogramação", "meditação", "desenvolvimento pessoal"]
-  },
-  {
-    "id": 3,
-    "titulo": "Telepatia: Realidade ou Ficção Científica?",
-    "slug": "telepatia-realidade-ficcao",
-    "resumo": "Uma análise dos estudos experimentais sobre comunicação telepática ao longo das décadas.",
-    "conteudo": "Ao contrário do que muitos acreditam, a telepatia não é ficção. Estudos controlados realizados por institutos de pesquisa em todo o mundo documentam evidências de comunicação não-verbal entre indivíduos.",
-    "autor": "Prof. Valter Franceschini",
-    "data": "2023-12-28",
-    "categoria": "pesquisa",
-    "tags": ["telepatia", "psi", "experimentos"]
-  },
-  {
-    "id": 4,
-    "titulo": "O Legado da CIPASO: 35 Anos de Investigação",
-    "slug": "legado-cipaso-35-anos",
-    "resumo": "Reflexão sobre os marcos históricos, descobertas e contribuições da CIPASO para o conhecimento parapsicológico.",
-    "conteudo": "Desde sua fundação em 1989, a CIPASO tem mantido um compromisso inabalável com a excelência investigativa. Este artigo celebra os 35 anos de dedição à verdade científica.",
-    "autor": "Prof. Valter Franceschini",
-    "data": "2023-12-15",
-    "categoria": "institucional",
-    "tags": ["cipaso", "história", "legado"]
-  },
-  {
-    "id": 5,
-    "titulo": "Segurança Emocional Através da Consciência",
-    "slug": "seguranca-emocional-consciencia",
-    "resumo": "Como o desenvolvimento da consciência e autoconhecimento gera estabilidade emocional duradoura.",
-    "conteudo": "A segurança emocional não vem de fatores externos. Ela surge quando compreendemos profundamente quem somos e qual é nosso lugar no universo.",
-    "autor": "Prof. Valter Franceschini",
-    "data": "2023-12-01",
-    "categoria": "desenvolvimento",
-    "tags": ["consciência", "emocional", "autoconhecimento"]
+    "tags": [
+      "parapsicologia",
+      "consciência",
+      "ciência"
+    ]
   }
 ]
