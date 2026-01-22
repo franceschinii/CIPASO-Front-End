@@ -3,6 +3,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Home } from '@/pages/Home'
 import { Acervo } from '@/pages/Acervo'
+import { About } from '@/pages/About'
 
 function App() {
   return (
@@ -24,17 +25,7 @@ function App() {
                 </div>
               }
             />
-            <Route
-              path="/sobre"
-              element={
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Sobre o Memorial</h1>
-                  <p className="text-lg text-muted-fg">
-                    Informações sobre a criação deste memorial digital.
-                  </p>
-                </div>
-              }
-            />
+            <Route path="/sobre" element={<About />} />
             <Route
               path="*"
               element={

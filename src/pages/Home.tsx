@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { DailyQuote } from '@/components/home/DailyQuote'
 import { FeaturedFile } from '@/components/home/FeaturedFile'
 import { FeaturedVideo } from '@/components/home/FeaturedVideo'
@@ -10,6 +11,10 @@ import { getRecentPosts } from '@/data/blog'
 
 export function Home() {
   const recentPosts = getRecentPosts(3)
+
+  useEffect(() => {
+    document.title = 'CIPASO - Memorial Digital'
+  }, [])
 
   return (
     <div className="min-h-screen bg-bg">

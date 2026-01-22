@@ -1,4 +1,5 @@
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import parametrosLogo from '@/assets/svg/parametros-logo.svg'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,6 +11,7 @@ export function Footer() {
           {/* Informações Institucionais */}
           <div>
             <h3 className="text-lg font-bold mb-4">CIPASO</h3>
+            <img src={parametrosLogo} alt="CIPASO Logo" className="h-12 w-12 mb-4" />
             <p className="text-sm text-muted-fg mb-4">
               Centro de Investigação Parapsicológica de Sorocaba
             </p>
@@ -22,6 +24,7 @@ export function Footer() {
           {/* Parâmetros Holísticos */}
           <div>
             <h3 className="text-lg font-bold mb-4">Parâmetros Holísticos</h3>
+            <img src={parametrosLogo} alt="Parâmetros Logo" className="h-12 w-12 mb-4" />
             <p className="text-sm text-muted-fg mb-4">
               Formação Humana LTDA.
             </p>
@@ -53,7 +56,7 @@ export function Footer() {
 
           {/* Localização Histórica */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Localização</h3>
+            <h3 className="text-lg font-bold mb-4">Localização Histórica</h3>
             <div className="space-y-3 text-sm text-muted-fg">
               <div className="flex items-start gap-2">
                 <MapPinIcon className="h-4 w-4 mt-0.5 shrink-0" />

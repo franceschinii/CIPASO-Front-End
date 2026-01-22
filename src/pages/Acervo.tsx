@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon } from '@heroicons/react/24/solid'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
@@ -32,6 +32,10 @@ export function Acervo() {
   const [sortBy, setSortBy] = useState<SortOption>('recent')
   const [selectedFile, setSelectedFile] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  useEffect(() => {
+    document.title = 'CIPASO - Acervo Digital'
+  }, [])
 
   const categories = Array.from(new Set(allFiles.map(f => f.categoria))) as FileCategory[]
 
