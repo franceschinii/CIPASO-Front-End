@@ -27,18 +27,19 @@ export function FeaturedVideo() {
       transition={{ duration: 0.6 }}
       className="relative bg-linear-to-br from-primary/10 to-accent/5 border border-primary/30 rounded-xl overflow-hidden shadow-lg"
     >
-      {/* Video Container */}
-      <div className="relative aspect-video bg-fg/10 overflow-hidden">
-        <video
-          src={video.path}
-          controls
-          className="w-full h-full object-cover"
-          controlsList="nodownload"
-        />
-      </div>
+      <div className="grid lg:grid-cols-[1fr_380px] gap-8 p-8 lg:p-0">
+        {/* Video Container */}
+        <div className="relative aspect-video bg-fg/10 overflow-hidden rounded-lg lg:rounded-l-lg lg:rounded-r-none">
+          <video
+            src={video.path}
+            controls
+            className="w-full h-full object-cover"
+            controlsList="nodownload"
+          />
+        </div>
 
-      {/* Metadata */}
-      <div className="p-8">
+        {/* Metadata */}
+        <div className="flex flex-col justify-between lg:p-8">
         {/* Label */}
         <div className="flex items-center gap-2 mb-4">
           <FilmIcon className="h-5 w-5 text-primary" />
@@ -73,6 +74,7 @@ export function FeaturedVideo() {
           >
             Baixar
           </a>
+        </div>
         </div>
       </div>
 

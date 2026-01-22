@@ -25,33 +25,13 @@ export function AboutValter() {
           {/* Conteúdo Principal */}
           <div className="space-y-12">
             {/* Foto + Biografia */}
-            <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-              {/* Fotografia */}
+            <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+              {/* Biografia */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="relative"
-              >
-                <div className="w-full max-w-sm mx-auto lg:max-w-none aspect-[2.5/3.5] sm:aspect-3/4 rounded-lg overflow-hidden shadow-2xl border-4 border-primary/20">
-                  <img
-                    src={valterPhoto}
-                    alt="Prof. Valter Franceschini"
-                    className="w-full h-full object-contain hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-
-                {/* Decoração */}
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10 hidden sm:block" />
-              </motion.div>
-
-              {/* Biografia */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
                 className="space-y-6"
               >
                 <p className="text-lg leading-relaxed">
@@ -79,6 +59,26 @@ export function AboutValter() {
                   Seu trabalho continua vivo através deste memorial digital e das centenas de
                   alunos que formou ao longo de décadas de magistério.
                 </p>
+              </motion.div>
+
+              {/* Fotografia */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="relative"
+              >
+                <div className="w-full rounded-lg overflow-hidden shadow-2xl border-4 border-primary/20">
+                  <img
+                    src={valterPhoto}
+                    alt="Prof. Valter Franceschini"
+                    className="w-full h-auto grayscale object-contain hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+
+                {/* Decoração */}
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10 hidden sm:block" />
               </motion.div>
             </div>
 
