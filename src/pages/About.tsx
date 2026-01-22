@@ -170,29 +170,23 @@ export function About() {
               </motion.div>
 
               {/* Conteúdo em Grid */}
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Coluna Esquerda: Primeiro parágrafo + Foto */}
+              <div className="grid md:grid-cols-[350px_1fr] gap-8 items-start">
+                {/* Foto */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="space-y-6"
+                  className="relative aspect-3/4 overflow-hidden rounded-lg"
                 >
-                  <p className="text-lg text-muted-fg leading-relaxed">
-                    <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
-                  </p>
-
-                  <div className="relative aspect-3/4 overflow-hidden rounded-lg">
-                    <img
-                      src={valterPhoto}
-                      alt="Prof. Valter Franceschini"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                  <img
+                    src={valterPhoto}
+                    alt="Prof. Valter Franceschini"
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
 
-                {/* Coluna Direita: Resto do conteúdo */}
+                {/* Conteúdo */}
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -200,6 +194,10 @@ export function About() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="space-y-4 text-lg text-muted-fg leading-relaxed"
                 >
+                  <p>
+                    <strong className="text-primary">Escritor, conferencista, parapsicólogo, professor e operador dos fenômenos PSI</strong> — o Prof. Valter Franceschini foi o idealizador e mentor espiritual do CIPASO.
+                  </p>
+
                   <p>
                     Sua visão pioneira de unir <strong>ciência e humanismo</strong> moldou toda a filosofia institucional do Centro. Com mais de 55 anos de magistério, o Prof. Valter transformou inúmeras vidas através de suas metodologias inovadoras e sua dedicação incansável ao desenvolvimento integral do ser humano.
                   </p>
