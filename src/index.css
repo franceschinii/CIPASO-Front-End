@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Sutro W01';
-  src: url('src/assets/fonts/SutroW01-Heavy.ttf') format('truetype');
+  src: url('/assets/fonts/SutroW01-Heavy.ttf') format('truetype');
   font-weight: 900;
   font-display: swap;
 }
