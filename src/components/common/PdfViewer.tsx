@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import { ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
-// Configurar o worker do PDF.js usando CDN
+// Configurar o worker do PDF.js
 if (!pdfjs.GlobalWorkerOptions.workerSrc) {
-  const pdfjsVersion = pdfjs.version
-  pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`
+  pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.js',
+    import.meta.url,
+  ).toString()
 }
 
 interface PdfViewerProps {
