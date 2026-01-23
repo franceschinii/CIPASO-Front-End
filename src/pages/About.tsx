@@ -6,7 +6,7 @@ import valterPhoto from '@/assets/png/vaf/Valter Franceschini.jpg'
 
 export function About() {
   useEffect(() => {
-    document.title = 'CIPASO - Sobre'
+    document.title = 'Memorial CIPASO - Sobre'
   }, [])
 
   return (
@@ -44,10 +44,10 @@ export function About() {
           >
             {/* O que é CIPASO */}
             <div>
-              <h2 className="text-4xl font-bold mb-8 text-fg">O que é CIPASO</h2>
+              <h2 className="text-4xl font-bold mb-8 text-fg">O que foi CIPASO</h2>
               <div className="space-y-6 text-lg text-muted-fg leading-relaxed">
                 <p>
-                  O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> é uma instituição dedicada à <strong>investigação científica experimental</strong> que estuda, identifica e classifica os fenômenos exteriorizados através da paranormalidade.
+                  O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> foi uma instituição dedicada à <strong>investigação científica experimental</strong> que estudava, identificava e classificava os fenômenos exteriorizados através da paranormalidade.
                 </p>
 
                 <p>
@@ -55,7 +55,7 @@ export function About() {
                 </p>
 
                 <p>
-                  Fundado em <strong>1989</strong>, o CIPASO atua há mais de 55 anos desenvolvendo e divulgando metodologias que ajudam pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável — através de cura, orientação, aconselhamento e educação baseados em princípios científicos rigorosos.
+                  Fundado em <strong>1989</strong> pelo Prof. Valter Álfredo Franceschini, desenvolveu e divulgou metodologias que ajudam pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável — através de cura, orientação, aconselhamento e educação baseados em princípios científicos rigorosos. Este memorial preserva seu legado para que continue inspirando e transformando vidas.
                 </p>
               </div>
             </div>

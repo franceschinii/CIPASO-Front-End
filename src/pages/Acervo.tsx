@@ -36,7 +36,7 @@ export function Acervo() {
   const [isPdfFullscreen, setIsPdfFullscreen] = useState(false)
 
   useEffect(() => {
-    document.title = 'CIPASO - Acervo Digital'
+    document.title = 'Acervo Digital - Memorial CIPASO'
   }, [])
 
   const handleCloseModal = () => {

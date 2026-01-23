@@ -13,7 +13,7 @@ export function Home() {
   const recentPosts = getRecentPosts(3)
 
   useEffect(() => {
-    document.title = 'CIPASO - Memorial Digital'
+    document.title = 'Memorial Digital - CIPASO'
   }, [])
 
   return (
@@ -80,10 +80,10 @@ export function Home() {
               <UsersIcon className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-2 text-fg">Nossa História</h3>
               <p className="text-muted-fg mb-6">
-                Fundado em 1989, o CIPASO é referência em pesquisa parapsicológica
+                Fundado em 1989, o CIPASO foi um centro dedicado à pesquisa parapsicológica
               </p>
               <span className="inline-flex items-center gap-2 text-primary font-medium">
-                Desde 1989
+                1989 - Legado Preservado
               </span>
             </div>
 
@@ -216,18 +216,18 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Ciência e Humanismo</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Legado: Ciência e Humanismo</h2>
             <div className="space-y-6 text-lg text-muted-fg leading-relaxed">
               <p>
-                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> é uma <strong>ciência experimental</strong> que estuda, identifica e classifica os fenômenos exteriorizados através da paranormalidade — a capacidade humana de percepção hiperestésica e conhecimento extrasensorial não convencional.
+                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> foi uma instituição dedicada à <strong>ciência experimental</strong> que estudava, identificava e classificava os fenômenos exteriorizados através da paranormalidade — a capacidade humana de percepção hiperestésica e conhecimento extrasensorial não convencional.
               </p>
 
               <p>
-                Fundado em <strong>1989</strong>, há mais de 55 anos desenvolvemos metodologias para ajudar pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável. Trabalho com <strong>cura, orientação e aconselhamento</strong> baseado em princípios científicos rigorosos.
+                Fundado em <strong>1989</strong> pelo Prof. Valter Álfredo Franceschini, desenvolveu metodologias para ajudar pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável, trabalhando com <strong>cura, orientação e aconselhamento</strong> baseado em princípios científicos rigorosos. Este memorial preserva seu trabalho e permite que seu legado continue inspirando e ajudando pessoas.
               </p>
 
               <p>
-                A base fundamental de nossa metodologia repousa nas <strong>5 Ferramentas Mentais</strong>, que operam nos níveis cerebrais beta, alfa, teta e delta, promovendo reprogramação mental positiva e programação consciente da mente.
+                A base fundamental de sua metodologia repousava nas <strong>5 Ferramentas Mentais</strong>, que operam nos níveis cerebrais beta, alfa, teta e delta, promovendo reprogramação mental positiva e programação consciente da mente.
               </p>
 
               <div className="bg-white dark:bg-muted border border-primary/30 rounded-lg p-6 my-8">

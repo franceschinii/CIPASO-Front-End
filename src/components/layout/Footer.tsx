@@ -1,4 +1,4 @@
-import { MapPinIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon } from '@heroicons/react/24/solid'
 import parametrosLogo from '@/assets/svg/parametros-logo.svg'
 
 export function Footer() {
@@ -14,9 +14,10 @@ export function Footer() {
             <p className="text-sm text-muted-fg mb-4">
               Centro de Investigação Parapsicológica de Sorocaba
             </p>
-            <div className="space-y-2 text-sm text-muted-fg">
+            <div className="space-y-2 text-xs text-muted-fg">
               <p>CNPJ: 58.984.089/0001-58</p>
               <p>Fundação: 1989</p>
+              <p className="text-yellow-600 dark:text-yellow-500 font-semibold">Status: Inativo</p>
             </div>
           </div>
 
@@ -24,35 +25,32 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src={parametrosLogo} alt="Parâmetros Logo" className="h-8 w-8 shrink-0" />
-              <h3 className="text-lg font-bold">Parâmetros Holísticos</h3>
+              <h3 className="text-lg font-bold">Parâmetros</h3>
             </div>
             <p className="text-sm text-muted-fg mb-4">
               Formação Humana LTDA.
             </p>
-            <div className="space-y-2 text-sm text-muted-fg">
+            <div className="space-y-2 text-xs text-muted-fg">
               <p>CNPJ: 67.361.410/0001-39</p>
-              <p>Parceira institucional desde 1989</p>
+              <p>Fundação: 1989</p>
+              <p className="text-yellow-600 dark:text-yellow-500 font-semibold">Status: Inativo</p>
             </div>
           </div>
 
-          {/* Contato */}
+          {/* Desenvolvimento */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Contato</h3>
-            <div className="space-y-3 text-sm text-muted-fg">
-              <div className="flex items-center gap-2">
-                <EnvelopeIcon className="h-4 w-4 shrink-0" />
-                <a href="mailto:contato@andrefranceschini.com.br" className="hover:text-primary transition-colors break-all">
-                  contato@andrefranceschini.com.br
-                </a>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <PhoneIcon className="h-4 w-4 shrink-0" />
-                <a href="tel:+5515997234932" className="hover:text-primary transition-colors">
-                  +55 (15) 99723-4932
-                </a>
-              </div>
-            </div>
+            <h3 className="text-lg font-bold mb-4">Desenvolvimento</h3>
+            <p className="text-sm text-muted-fg mb-3">
+              Site desenvolvido por
+            </p>
+            <a
+              href="https://www.linkedin.com/in/andrefranceschini/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-secondary transition-colors font-semibold"
+            >
+              André Franceschini
+            </a>
           </div>
 
           {/* Localização Histórica */}
@@ -71,12 +69,15 @@ export function Footer() {
         </div>
 
         {/* Créditos e Copyright */}
-        <div className="mt-12 pt-8 border-t border-muted text-center text-sm text-muted-fg">
-          <p className="mb-2">
-            Memorial Digital desenvolvido com respeito à memória do Prof. Valter Franceschini
+        <div className="mt-12 pt-8 border-t border-muted space-y-3 text-center text-xs text-muted-fg">
+          <p>
+            Memorial Digital desenvolvido por <a href="https://www.linkedin.com/in/andrefranceschini/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition-colors font-semibold">André Franceschini</a>
           </p>
           <p>
-            © {currentYear} CIPASO. Todos os direitos reservados.
+            Arquivo oferecido e disponibilizado pela Família Franceschini e Amigos, com intuito de manter preservada a memória do <strong>Prof. Valter Álfredo Franceschini</strong>, parte da história da parapsicologia e de Sorocaba. Oferecendo a todos a possibilidade de melhorar suas vidas e conhecer o trabalho dele.
+          </p>
+          <p className="pt-4">
+            © {currentYear}. Todos os direitos reservados.
           </p>
         </div>
       </div>
