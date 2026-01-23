@@ -1,4 +1,4 @@
-import { MapPinIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
 import parametrosLogo from '@/assets/svg/parametros-logo.svg'
 
 export function Footer() {
@@ -37,20 +37,27 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Desenvolvimento */}
+          {/* Contato */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Desenvolvimento</h3>
-            <p className="text-sm text-muted-fg mb-3">
-              Site desenvolvido por
+            <h3 className="text-lg font-bold mb-4">Contato</h3>
+            <div className="space-y-3 text-sm text-muted-fg">
+              <div className="flex items-center gap-2">
+                <EnvelopeIcon className="h-4 w-4 shrink-0" />
+                <a href="mailto:contato@andrefranceschini.com.br" className="hover:text-primary transition-colors break-all">
+                  contato@andrefranceschini.com.br
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <PhoneIcon className="h-4 w-4 shrink-0" />
+                <a href="tel:+5515997234932" className="hover:text-primary transition-colors">
+                  +55 (15) 99723-4932
+                </a>
+              </div>
+            </div>
+            <p className="text-xs text-muted-fg mt-4 pt-4 border-t border-muted/30">
+              Tem material, história ou mensagem positiva para contribuir? Entre em contato!
             </p>
-            <a
-              href="https://www.linkedin.com/in/andrefranceschini/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-secondary transition-colors font-semibold"
-            >
-              André Franceschini
-            </a>
           </div>
 
           {/* Localização Histórica */}
@@ -65,6 +72,9 @@ export function Footer() {
                 </p>
               </div>
             </div>
+            <p className="text-xs text-muted-fg mt-4 pt-4 border-t border-muted/30 italic">
+              CIPASO e Parâmetros não existem mais neste local físico.
+            </p>
           </div>
         </div>
 
@@ -74,7 +84,7 @@ export function Footer() {
             Memorial Digital desenvolvido por <a href="https://www.linkedin.com/in/andrefranceschini/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition-colors font-semibold">André Franceschini</a>
           </p>
           <p>
-            Arquivo oferecido e disponibilizado pela Família Franceschini e Amigos, com intuito de manter preservada a memória do <strong>Prof. Valter Álfredo Franceschini</strong>, parte da história da parapsicologia e de Sorocaba. Oferecendo a todos a possibilidade de melhorar suas vidas e conhecer o trabalho dele.
+            Arquivos oferecidos e disponibilizados pela Família Franceschini e Amigos, com o intuito de preservar a memória do <strong>Prof. Valter Álfredo Franceschini</strong>, parte da história da parapsicologia e da cidade de Sorocaba. O material é disponibilizado a todos, com o objetivo de possibilitar a melhoria da qualidade de vida e o conhecimento de seu trabalho.
           </p>
           <p className="pt-4">
             © {currentYear}. Todos os direitos reservados.

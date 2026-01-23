@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
+import { Sprout, Flower2 } from 'lucide-react'
 import valterPhoto from '@/assets/png/vaf/Valter Franceschini.jpg'
 
 export function About() {
@@ -191,14 +192,14 @@ export function About() {
                   {/* Datas com Ícones */}
                   <div className="space-y-2 text-sm text-muted-fg">
                     <div className="flex items-start gap-2">
-                      <div className="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0" />
+                      <Sprout className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       <div>
                         <p><strong>Nascimento:</strong> 02/08/1940</p>
                         <p className="text-xs">Campinas, SP</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-primary font-bold">✝</span>
+                      <Flower2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       <div>
                         <p><strong>Falecimento:</strong> 18/02/2016</p>
                         <p className="text-xs">Sorocaba, SP (75 anos)</p>
