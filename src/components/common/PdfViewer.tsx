@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import { ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import workerSrc from 'pdfjs-dist/build/pdf.worker.min.js?url'
 
-pdfjs.GlobalWorkerOptions.workerSrc = workerSrc
+// Usa CDN como fallback
+const pdfjsVersion = pdfjs.version
+if (!pdfjs.GlobalWorkerOptions.workerSrc) {
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`
+}
 
 interface PdfViewerProps {
   path: string
