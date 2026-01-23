@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon } from '@heroicons/react/24/solid'
-import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import { MagnifyingGlassIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import { getAllFiles, type FileCategory } from '@/data/files'
 import { Modal } from '@/components/common/Modal'
+import { PdfViewer } from '@/components/common/PdfViewer'
 
 const categoryLabels: Record<string, string> = {
   textos: 'Documentos',
@@ -32,10 +33,16 @@ export function Acervo() {
   const [sortBy, setSortBy] = useState<SortOption>('recent')
   const [selectedFile, setSelectedFile] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isPdfFullscreen, setIsPdfFullscreen] = useState(false)
 
   useEffect(() => {
     document.title = 'CIPASO - Acervo Digital'
   }, [])
+
+  const handleCloseModal = () => {
+    setIsPdfFullscreen(false)
+    setIsModalOpen(false)
+  }
 
   const categories = Array.from(new Set(allFiles.map(f => f.categoria))) as FileCategory[]
 
@@ -241,10 +248,20 @@ export function Acervo() {
         )}
       </div>
 
+      {/* PDF Fullscreen */}
+      {isPdfFullscreen && selectedFile?.path.endsWith('.pdf') && (
+        <PdfViewer
+          path={selectedFile.path}
+          title={selectedFile.titulo}
+          isFullscreen={true}
+          onClose={() => setIsPdfFullscreen(false)}
+        />
+      )}
+
       {/* Modal */}
       <Modal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        isOpen={isModalOpen && !isPdfFullscreen}
+        onClose={handleCloseModal}
         title={selectedFile?.titulo}
       >
         {selectedFile && (
@@ -311,6 +328,44 @@ export function Acervo() {
                       className="w-full text-center bg-primary/20 text-primary py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
                     >
                       Baixar Vídeo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : selectedFile.path.endsWith('.pdf') ? (
+              <div className="space-y-4">
+                <PdfViewer
+                  path={selectedFile.path}
+                  title={selectedFile.titulo}
+                  isFullscreen={false}
+                  onClose={() => {}}
+                />
+                <div className="space-y-3 text-sm">
+                  <p className="text-muted-fg">{selectedFile.descricao}</p>
+                  <div className="grid grid-cols-2 gap-3 text-muted-fg">
+                    <div>
+                      <span className="font-medium text-fg">Data:</span>
+                      <p>{formatDate(selectedFile.data)}</p>
+                    </div>
+                    <div>
+                      <span className="font-medium text-fg">Tipo:</span>
+                      <p>{selectedFile.tipo.toUpperCase()}</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <button
+                      onClick={() => setIsPdfFullscreen(true)}
+                      className="flex-1 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+                    >
+                      <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                      Tela Cheia
+                    </button>
+                    <a
+                      href={selectedFile.path}
+                      download
+                      className="flex-1 text-center bg-primary/20 text-primary py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
+                    >
+                      Baixar
                     </a>
                   </div>
                 </div>
