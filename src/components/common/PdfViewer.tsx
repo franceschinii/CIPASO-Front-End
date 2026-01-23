@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 
 interface PdfViewerProps {
@@ -8,6 +9,16 @@ interface PdfViewerProps {
 }
 
 export function PdfViewer({ path, title, isFullscreen, onClose }: PdfViewerProps) {
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isFullscreen])
   if (isFullscreen) {
     return (
       <div className="fixed inset-0 bg-black z-50 flex flex-col">
