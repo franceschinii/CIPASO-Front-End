@@ -98,51 +98,49 @@ export function PdfViewer({ path, title, isFullscreen, onClose }: PdfViewerProps
   }
 
   return (
-    <div className="space-y-4">
-      <div className="bg-gray-100 rounded-lg overflow-auto max-h-[60vh] flex flex-col items-center justify-center">
+    <div className="flex flex-col gap-4">
+      <div className="bg-muted rounded-lg overflow-auto max-h-96 flex flex-col items-center justify-center border border-border">
         {isLoading && (
-          <div className="text-gray-600">Carregando PDF...</div>
+          <div className="text-muted-fg">Carregando PDF...</div>
         )}
         <Document
           file={path}
           onLoadSuccess={onDocumentLoadSuccess}
-          loading={<div className="text-gray-600">Carregando...</div>}
+          loading={<div className="text-muted-fg">Carregando...</div>}
           error={<div className="text-red-600">Erro ao carregar PDF</div>}
         >
           <Page
             pageNumber={currentPage}
-            width={400}
-            renderAnnotationLayer={true}
-            renderTextLayer={true}
+            width={500}
+            renderAnnotationLayer={false}
+            renderTextLayer={false}
           />
         </Document>
       </div>
 
-      {numPages && (
-        <div className="flex items-center justify-between gap-2 text-sm text-gray-600">
-          <button
-            onClick={handlePrevious}
-            disabled={currentPage === 1}
-            className="p-2 bg-gray-200 hover:bg-gray-300 disabled:opacity-50 rounded transition-colors"
-            aria-label="Página anterior"
-          >
-            <ChevronLeftIcon className="h-5 w-5" />
-          </button>
+      <div className="flex items-center justify-between gap-3 bg-muted p-4 rounded-lg border border-border">
+        <button
+          onClick={handlePrevious}
+          disabled={currentPage === 1}
+          className="p-2 hover:bg-border disabled:opacity-50 rounded transition-colors text-fg"
+          aria-label="Página anterior"
+        >
+          <ChevronLeftIcon className="h-5 w-5" />
+        </button>
 
-          <div>
-            {currentPage} de {numPages} páginas
-          </div>
-
-          <button
-            onClick={handleNext}
-            disabled={currentPage === numPages}
-            className="p-2 bg-gray-200 hover:bg-gray-300 disabled:opacity-50 rounded transition-colors"
-            aria-label="Próxima página"
-          >
-            <ChevronRightIcon className="h-5 w-5" />
-          </button>
+        <div className="text-sm text-muted-fg font-medium">
+          {isLoading ? '...' : `${currentPage} / ${numPages || '?'}`} páginas
         </div>
-      )}
+
+        <button
+          onClick={handleNext}
+          disabled={!numPages || currentPage === numPages}
+          className="p-2 hover:bg-border disabled:opacity-50 rounded transition-colors text-fg"
+          aria-label="Próxima página"
+        >
+          <ChevronRightIcon className="h-5 w-5" />
+        </button>
+      </div>
     </div>
   )
 }
