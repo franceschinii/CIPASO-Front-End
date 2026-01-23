@@ -1,0 +1,78 @@
+name: Deploy cipaso.com (build + SSH)
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # Ajuste aqui se o seu build gerar outra pasta:
+      # Vite: dist
+      # CRA: build
+      - name: Pack build artifacts
+        run: |
+          if [ -d dist ]; then
+            tar -czf site.tgz -C dist .
+          elif [ -d build ]; then
+            tar -czf site.tgz -C build .
+          else
+            echo "Nenhuma pasta dist/ ou build/ encontrada. Ajuste o workflow."
+            exit 1
+          fi
+
+      - name: Upload build to server (SCP)
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "site.tgz"
+          target: "~/deploy/cipaso/incoming"
+
+      - name: Activate release (SSH + rsync, keep uploads)
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            set -e
+
+            DEPLOY_DIR="$HOME/domains/cipaso.com/public_html"
+            INCOMING_DIR="$HOME/deploy/cipaso/incoming"
+            RELEASES_DIR="$HOME/deploy/cipaso/releases"
+            TS="$(date +%Y%m%d-%H%M%S)"
+            NEW_RELEASE="$RELEASES_DIR/$TS"
+
+            mkdir -p "$NEW_RELEASE"
+            tar -xzf "$INCOMING_DIR/site.tgz" -C "$NEW_RELEASE"
+            rm -f "$INCOMING_DIR/site.tgz"
+
+            # Sincroniza a release para o site, MAS preserva uploads/
+            rsync -av --delete \
+              --exclude 'uploads/' \
+              "$NEW_RELEASE/" \
+              "$DEPLOY_DIR/"
+
+            # (opcional) manter só as últimas 5 releases
+            ls -1dt "$RELEASES_DIR"/* | tail -n +6 | xargs -r rm -rf
