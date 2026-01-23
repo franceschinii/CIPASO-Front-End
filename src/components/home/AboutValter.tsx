@@ -25,7 +25,7 @@ export function AboutValter() {
           {/* Conteúdo Principal */}
           <div className="space-y-12">
             {/* Foto + Biografia */}
-            <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+            <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start mb-0">
               {/* Biografia */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -54,11 +54,6 @@ export function AboutValter() {
                     — Prof. Valter Franceschini
                   </cite>
                 </blockquote>
-
-                <p className="text-sm text-muted-fg italic pt-4">
-                  Seu trabalho continua vivo através deste memorial digital e das centenas de
-                  alunos que formou ao longo de décadas de magistério.
-                </p>
               </motion.div>
 
               {/* Fotografia */}
@@ -81,6 +76,11 @@ export function AboutValter() {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10 hidden sm:block" />
               </motion.div>
             </div>
+
+            <p className="text-center text-sm text-muted-fg italic mt-2 mb-16 w-full">
+              Seu trabalho continua vivo através deste memorial digital e das centenas de
+              alunos que formou ao longo de décadas de magistério.
+            </p>
 
             {/* 5 Ferramentas Mentais em Row */}
             <motion.div

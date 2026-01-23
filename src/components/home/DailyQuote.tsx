@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Quote } from 'lucide-react'
-import { getRandomQuote, type Quote as QuoteType } from '@/data/quotes'
+import { getQuoteForDay, type Quote as QuoteType } from '@/data/quotes'
 
 export function DailyQuote() {
   const [quote, setQuote] = useState<QuoteType | null>(null)
 
   useEffect(() => {
-    setQuote(getRandomQuote())
+    setQuote(getQuoteForDay())
   }, [])
 
   if (!quote) {

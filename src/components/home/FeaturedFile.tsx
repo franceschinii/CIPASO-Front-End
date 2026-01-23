@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
-import { getRandomFile, type DigitalFile } from '@/data/files'
+import { getFileForDay, type DigitalFile } from '@/data/files'
 import { useEffect, useState } from 'react'
 import { Modal } from '@/components/common/Modal'
 import { PdfViewer } from '@/components/common/PdfViewer'
@@ -30,7 +30,7 @@ export function FeaturedFile() {
   const [isPdfFullscreen, setIsPdfFullscreen] = useState(false)
 
   useEffect(() => {
-    setFile(getRandomFile(true))
+    setFile(getFileForDay(true) ?? null)
   }, [])
 
   if (!file) {

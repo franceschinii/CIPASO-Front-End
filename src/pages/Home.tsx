@@ -13,7 +13,7 @@ export function Home() {
   const recentPosts = getRecentPosts(3)
 
   useEffect(() => {
-    document.title = 'CIPASO - Memorial Digital'
+    document.title = 'Memorial Digital - CIPASO'
   }, [])
 
   return (
@@ -25,24 +25,30 @@ export function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-20"
+            className="text-center"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-fg leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold mb-8 text-fg leading-tight">
               Memorial Digital
               <br />
-              <span className="text-primary">CIPASO</span>
+              <span className="text-7xl md:text-9xl text-primary">CIPASO</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-fg max-w-3xl mx-auto leading-relaxed font-light">
               Centro de Investigação Parapsicológica de Sorocaba — Preservando a história da
               investigação científica, desenvolvimento humano e o legado do Prof. Valter Franceschini
             </p>
           </motion.div>
+        </div>
+      </section>
 
+      {/* Seção de Destaque: Citação + Arquivo + Cards */}
+      <section className="py-20 px-4 bg-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           {/* Grid de Destaque: Citação + Arquivo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             className="grid md:grid-cols-2 gap-8 mb-16"
           >
             <div>
@@ -56,8 +62,9 @@ export function Home() {
           {/* Cards de Destaque */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="grid md:grid-cols-3 gap-6"
           >
             {/* Card Acervo */}
@@ -80,10 +87,10 @@ export function Home() {
               <UsersIcon className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-2 text-fg">Nossa História</h3>
               <p className="text-muted-fg mb-6">
-                Fundado em 1989, o CIPASO é referência em pesquisa parapsicológica
+                Fundado em 1989, o CIPASO foi um centro dedicado à pesquisa parapsicológica
               </p>
               <span className="inline-flex items-center gap-2 text-primary font-medium">
-                Desde 1989
+                1989 - Legado Preservado
               </span>
             </div>
 
@@ -216,18 +223,18 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Ciência e Humanismo</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-fg">Legado: Ciência e Humanismo</h2>
             <div className="space-y-6 text-lg text-muted-fg leading-relaxed">
               <p>
-                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> é uma <strong>ciência experimental</strong> que estuda, identifica e classifica os fenômenos exteriorizados através da paranormalidade — a capacidade humana de percepção hiperestésica e conhecimento extrasensorial não convencional.
+                O <strong>CIPASO (Centro de Investigação Parapsicológica de Sorocaba)</strong> foi uma instituição dedicada à <strong>ciência experimental</strong> que estudava, identificava e classificava os fenômenos exteriorizados através da paranormalidade — a capacidade humana de percepção hiperestésica e conhecimento extrasensorial não convencional.
               </p>
 
               <p>
-                Fundado em <strong>1989</strong>, há mais de 55 anos desenvolvemos metodologias para ajudar pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável. Trabalho com <strong>cura, orientação e aconselhamento</strong> baseado em princípios científicos rigorosos.
+                Fundado em <strong>1989</strong> pelo Prof. Valter Álfredo Franceschini, desenvolveu metodologias para ajudar pessoas a terem uma vida melhor, mais alegre, mais feliz e mais saudável, trabalhando com <strong>cura, orientação e aconselhamento</strong> baseado em princípios científicos rigorosos. Este memorial preserva seu trabalho e permite que seu legado continue inspirando e ajudando pessoas.
               </p>
 
               <p>
-                A base fundamental de nossa metodologia repousa nas <strong>5 Ferramentas Mentais</strong>, que operam nos níveis cerebrais beta, alfa, teta e delta, promovendo reprogramação mental positiva e programação consciente da mente.
+                A base fundamental de sua metodologia repousava nas <strong>5 Ferramentas Mentais</strong>, que operam nos níveis cerebrais beta, alfa, teta e delta, promovendo reprogramação mental positiva e programação consciente da mente.
               </p>
 
               <div className="bg-white dark:bg-muted border border-primary/30 rounded-lg p-6 my-8">

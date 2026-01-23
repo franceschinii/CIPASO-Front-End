@@ -50,7 +50,21 @@ export const quotes: Quote[] = [
   }
 ]
 
-// Função auxiliar para pegar uma citação aleatória
+function getDayOfYear(date: Date = new Date()): number {
+  const start = new Date(date.getFullYear(), 0, 0)
+  const diff = date.getTime() - start.getTime()
+  const oneDay = 1000 * 60 * 60 * 24
+  return Math.floor(diff / oneDay)
+}
+
+// Função auxiliar para pegar uma citação aleatória (mantida para compatibilidade)
 export function getRandomQuote(): Quote {
   return quotes[Math.floor(Math.random() * quotes.length)]
+}
+
+// Função para obter citação do dia (mesma para todos os usuários)
+export function getQuoteForDay(dayOfYear?: number): Quote {
+  const day = dayOfYear ?? getDayOfYear()
+  const index = day % quotes.length
+  return quotes[index]
 }
