@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import { ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min?url'
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker
+// Use o worker padrão do react-pdf
+if (!pdfjs.GlobalWorkerOptions.workerSrc) {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+}
 
 interface PdfViewerProps {
   path: string

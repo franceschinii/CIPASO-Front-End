@@ -122,21 +122,23 @@ export function FeaturedFile() {
         title={file.titulo}
       >
         {file.categoria === 'imagens' ? (
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-6">
             <img
               src={file.path}
               alt={file.titulo}
-              className="max-w-full max-h-[60vh] rounded-lg"
+              className="max-w-full max-h-[60vh] rounded-lg shadow-lg"
             />
-            <a
-              href={file.path}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition-all"
-            >
-              Abrir em nova aba
-              <ArrowRightIcon className="h-4 w-4" />
-            </a>
+            <div className="w-full">
+              <p className="text-muted-fg text-sm mb-4">{file.descricao}</p>
+              <a
+                href={file.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full text-center bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+              >
+                Abrir em Nova Aba
+              </a>
+            </div>
           </div>
         ) : file.path.endsWith('.pdf') ? (
           <div className="space-y-4">
@@ -148,26 +150,54 @@ export function FeaturedFile() {
             />
             <div className="space-y-3 text-sm">
               <p className="text-muted-fg">{file.descricao}</p>
-              <button
-                onClick={() => setIsPdfFullscreen(true)}
-                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
-              >
-                <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-                Tela Cheia
-              </button>
+              <div className="grid grid-cols-2 gap-3 text-muted-fg">
+                <div>
+                  <span className="font-medium text-fg">Data:</span>
+                  <p>{formatDate(file.data)}</p>
+                </div>
+                <div>
+                  <span className="font-medium text-fg">Tipo:</span>
+                  <p>{file.tipo.toUpperCase()}</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setIsPdfFullscreen(true)}
+                  className="flex-1 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+                >
+                  <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                  Tela Cheia
+                </button>
+                <a
+                  href={file.path}
+                  download
+                  className="flex-1 text-center bg-primary/20 text-primary py-3 rounded-lg font-medium hover:bg-primary/30 transition-all"
+                >
+                  Baixar
+                </a>
+              </div>
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center gap-4">
+          <div className="space-y-6">
             <p className="text-muted-fg">{file.descricao}</p>
+            <div className="grid grid-cols-2 gap-3 text-sm text-muted-fg">
+              <div>
+                <span className="font-medium text-fg">Data:</span>
+                <p>{formatDate(file.data)}</p>
+              </div>
+              <div>
+                <span className="font-medium text-fg">Tipo:</span>
+                <p>{file.tipo.toUpperCase()}</p>
+              </div>
+            </div>
             <a
               href={file.path}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+              className="block w-full text-center bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
             >
-              Abrir arquivo
-              <ArrowRightIcon className="h-4 w-4" />
+              Abrir Arquivo
             </a>
           </div>
         )}
