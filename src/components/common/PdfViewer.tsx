@@ -1,14 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import { ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min?url'
 
-// Use inline worker to avoid CORS issues
-if (typeof Worker !== 'undefined') {
-  pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url,
-  ).toString()
-}
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker
 
 interface PdfViewerProps {
   path: string
