@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
-import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon } from '@heroicons/react/24/solid'
+import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { getRandomFile, type DigitalFile } from '@/data/files'
 import { useEffect, useState } from 'react'
 import { Modal } from '@/components/common/Modal'
+import { PdfViewer } from '@/components/common/PdfViewer'
 
 const categoryIcons: Record<string, React.ReactNode> = {
   textos: <DocumentTextIcon className="h-6 w-6" />,
@@ -26,6 +27,7 @@ const categoryLabels: Record<string, string> = {
 export function FeaturedFile() {
   const [file, setFile] = useState<DigitalFile | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isPdfFullscreen, setIsPdfFullscreen] = useState(false)
 
   useEffect(() => {
     setFile(getRandomFile(true))
@@ -100,10 +102,23 @@ export function FeaturedFile() {
       {/* Decoração de fundo */}
       <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl" />
 
+      {/* PDF Fullscreen */}
+      {isPdfFullscreen && file.path.endsWith('.pdf') && (
+        <PdfViewer
+          path={file.path}
+          title={file.titulo}
+          isFullscreen={true}
+          onClose={() => setIsPdfFullscreen(false)}
+        />
+      )}
+
       {/* Modal para visualizar arquivo */}
       <Modal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        isOpen={isModalOpen && !isPdfFullscreen}
+        onClose={() => {
+          setIsPdfFullscreen(false)
+          setIsModalOpen(false)
+        }}
         title={file.titulo}
       >
         {file.categoria === 'imagens' ? (
@@ -122,6 +137,25 @@ export function FeaturedFile() {
               Abrir em nova aba
               <ArrowRightIcon className="h-4 w-4" />
             </a>
+          </div>
+        ) : file.path.endsWith('.pdf') ? (
+          <div className="space-y-4">
+            <PdfViewer
+              path={file.path}
+              title={file.titulo}
+              isFullscreen={false}
+              onClose={() => {}}
+            />
+            <div className="space-y-3 text-sm">
+              <p className="text-muted-fg">{file.descricao}</p>
+              <button
+                onClick={() => setIsPdfFullscreen(true)}
+                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition-all"
+              >
+                <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                Tela Cheia
+              </button>
+            </div>
           </div>
         ) : (
           <div className="flex flex-col items-center gap-4">
