@@ -4,6 +4,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Home } from '@/pages/Home'
 import { Acervo } from '@/pages/Acervo'
 import { About } from '@/pages/About'
+import { Legal } from '@/pages/Legal'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               }
             />
             <Route path="/sobre" element={<About />} />
+            <Route path="/termos" element={<Legal />} />
             <Route
               path="*"
               element={

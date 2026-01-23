@@ -11,7 +11,8 @@ export function Header() {
   const navItems = [
     { to: '/', label: 'Início' },
     { to: '/acervo', label: 'Acervo' },
-    { to: '/sobre', label: 'Sobre' }
+    { to: '/sobre', label: 'Sobre' },
+    { to: '/termos', label: 'Termos & Legal', isSecondary: true }
   ]
 
   return (
@@ -36,7 +37,11 @@ export function Header() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-sm font-medium text-muted-fg hover:text-primary transition-colors relative group"
+                className={`text-sm font-medium transition-colors relative group ${
+                  item.isSecondary
+                    ? 'text-muted-fg hover:text-primary'
+                    : 'text-muted-fg hover:text-primary'
+                }`}
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />

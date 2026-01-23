@@ -25,24 +25,30 @@ export function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-20"
+            className="text-center"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-fg leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold mb-8 text-fg leading-tight">
               Memorial Digital
               <br />
-              <span className="text-primary">CIPASO</span>
+              <span className="text-7xl md:text-9xl text-primary">CIPASO</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-fg max-w-3xl mx-auto leading-relaxed font-light">
               Centro de Investigação Parapsicológica de Sorocaba — Preservando a história da
               investigação científica, desenvolvimento humano e o legado do Prof. Valter Franceschini
             </p>
           </motion.div>
+        </div>
+      </section>
 
+      {/* Seção de Destaque: Citação + Arquivo + Cards */}
+      <section className="py-20 px-4 bg-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           {/* Grid de Destaque: Citação + Arquivo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             className="grid md:grid-cols-2 gap-8 mb-16"
           >
             <div>
@@ -56,8 +62,9 @@ export function Home() {
           {/* Cards de Destaque */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="grid md:grid-cols-3 gap-6"
           >
             {/* Card Acervo */}

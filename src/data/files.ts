@@ -48,3 +48,22 @@ export function getRandomVideo(): DigitalFile | undefined {
   const randomIndex = Math.floor(Math.random() * videos.length)
   return videos[randomIndex]
 }
+
+function getDayOfYear(date: Date = new Date()): number {
+  const start = new Date(date.getFullYear(), 0, 0)
+  const diff = date.getTime() - start.getTime()
+  const oneDay = 1000 * 60 * 60 * 24
+  return Math.floor(diff / oneDay)
+}
+
+export function getFileForDay(excludeAudio = false, dayOfYear?: number): DigitalFile | undefined {
+  let availableFiles = filesData as DigitalFile[]
+  if (excludeAudio) {
+    availableFiles = availableFiles.filter(file => file.categoria !== 'audios')
+  }
+  if (availableFiles.length === 0) return undefined
+
+  const day = dayOfYear ?? getDayOfYear()
+  const index = day % availableFiles.length
+  return availableFiles[index]
+}
