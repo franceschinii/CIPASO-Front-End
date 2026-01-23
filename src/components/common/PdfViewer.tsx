@@ -19,6 +19,15 @@ export function PdfViewer({ path, title, isFullscreen, onClose }: PdfViewerProps
       document.body.style.overflow = ''
     }
   }, [isFullscreen])
+
+  // Usar Google PDF Viewer para renderizar PDFs em iframes
+  const getPdfViewerUrl = (pdfPath: string): string => {
+    const fullUrl = new URL(pdfPath, window.location.origin).href
+    return `https://docs.google.com/gviewer?url=${encodeURIComponent(fullUrl)}&embedded=true`
+  }
+
+  const viewerUrl = getPdfViewerUrl(path)
+
   if (isFullscreen) {
     return (
       <div className="fixed inset-0 bg-black z-50 flex flex-col">
@@ -33,7 +42,7 @@ export function PdfViewer({ path, title, isFullscreen, onClose }: PdfViewerProps
           </button>
         </div>
         <iframe
-          src={path}
+          src={viewerUrl}
           className="flex-1 w-full border-0"
           title={title}
         />
@@ -43,7 +52,7 @@ export function PdfViewer({ path, title, isFullscreen, onClose }: PdfViewerProps
 
   return (
     <iframe
-      src={path}
+      src={viewerUrl}
       className="w-full h-80 rounded-lg border border-border overflow-auto"
       title={title}
     />
