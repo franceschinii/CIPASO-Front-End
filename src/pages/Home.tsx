@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
 import { DailyQuote } from '@/components/home/DailyQuote'
 import { FeaturedFile } from '@/components/home/FeaturedFile'
 import { FeaturedVideo } from '@/components/home/FeaturedVideo'
 import { AboutValter } from '@/components/home/AboutValter'
+import { SEO } from '@/components/SEO'
 import { motion } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
 import { ArrowRightIcon, BookOpenIcon, UsersIcon, DocumentTextIcon } from '@heroicons/react/24/solid'
@@ -12,12 +12,16 @@ import { getRecentPosts } from '@/data/blog'
 export function Home() {
   const recentPosts = getRecentPosts(3)
 
-  useEffect(() => {
-    document.title = 'Memorial Digital - CIPASO'
-  }, [])
-
   return (
-    <div className="min-h-screen bg-bg">
+    <>
+      <SEO
+        title="Memorial CIPASO - Centro de Investigação Parapsicológica de Sorocaba"
+        description="Acervo histórico e memorial digital do CIPASO. Parapsicologia científica, reprogramação mental positiva e legado do Prof. Valter Franceschini."
+        canonical="https://cipaso.com/"
+        ogImage="https://cipaso.com/favicon.svg"
+        ogType="website"
+      />
+      <div className="min-h-screen bg-bg">
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 px-4 md:pt-32 md:pb-24 bg-linear-to-b from-primary/5 via-bg to-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
@@ -272,6 +276,7 @@ export function Home() {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
