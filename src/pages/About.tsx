@@ -147,9 +147,9 @@ export function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
-                    className="flex items-start gap-3 text-lg text-muted-fg"
+                    className="flex items-center gap-3 text-lg text-muted-fg"
                   >
-                    <span className="text-primary font-bold mt-1">✓</span>
+                    <span className="text-primary font-bold shrink-0">✓</span>
                     <span>{value}</span>
                   </motion.li>
                 ))}
