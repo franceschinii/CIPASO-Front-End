@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Header } from '@/components/layout/Header'
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { Footer } from '@/components/layout/Footer'
 import { Home } from '@/pages/Home'
 import { Acervo } from '@/pages/Acervo'
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen flex flex-col bg-bg text-fg">
         <Header />
+        <Breadcrumbs />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
