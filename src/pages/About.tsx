@@ -189,8 +189,12 @@ export function About() {
                   <div className="relative aspect-3/4 overflow-hidden rounded-lg">
                     <img
                       src={valterPhoto}
-                      alt="Prof. Valter Franceschini"
+                      alt="Prof. Valter Franceschini, fundador do CIPASO e pesquisador parapsicológico"
                       className="w-full h-full object-cover"
+                      width={350}
+                      height={467}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
 

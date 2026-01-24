@@ -277,6 +277,8 @@ export function Acervo() {
                   src={selectedFile.path}
                   alt={selectedFile.titulo}
                   className="max-w-full max-h-[60vh] rounded-lg shadow-lg"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="w-full">
                   <p className="text-muted-fg text-sm mb-4">{selectedFile.descricao}</p>
