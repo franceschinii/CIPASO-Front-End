@@ -68,8 +68,8 @@ export function Footer() {
             <div className="space-y-3 text-sm text-muted-fg">
               <div className="flex items-center gap-2">
                 <EnvelopeIcon className="h-4 w-4 shrink-0" />
-                <a href="mailto:contato@andrefranceschini.com.br" className="hover:text-primary transition-colors break-all">
-                  contato@andrefranceschini.com.br
+                <a href="mailto:contato@cipaso.com" className="hover:text-primary transition-colors break-all">
+                  contato@cipaso.com
                 </a>
               </div>
 
