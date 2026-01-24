@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Header } from '@/components/layout/Header'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { Footer } from '@/components/layout/Footer'
+import { ScrollToTop } from '@/components/ScrollToTop'
 import { Home } from '@/pages/Home'
 import { Acervo } from '@/pages/Acervo'
 import { About } from '@/pages/About'
@@ -11,6 +12,7 @@ import { Legal } from '@/pages/Legal'
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-bg text-fg">
         <Header />
         <Breadcrumbs />
