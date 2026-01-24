@@ -160,40 +160,47 @@ export function Home() {
             {/* Cards de Blog */}
             <div className="grid md:grid-cols-3 gap-8">
               {recentPosts.map((post, index) => (
-                <motion.article
+                <Link
                   key={post.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col"
+                  to={`/blog/${post.slug}`}
+                  className="group"
                 >
-                  <div className="flex items-center gap-2 mb-4">
-                    <DocumentTextIcon className="h-5 w-5 text-primary" />
-                    <span className="text-xs uppercase tracking-wide text-primary font-semibold">
-                      {post.categoria}
-                    </span>
-                  </div>
+                  <motion.article
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="bg-white dark:bg-muted border border-muted rounded-xl p-8 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer"
+                  >
+                    <div className="flex items-center gap-2 mb-4">
+                      <DocumentTextIcon className="h-5 w-5 text-primary" />
+                      <span className="text-xs uppercase tracking-wide text-primary font-semibold">
+                        {post.categoria}
+                      </span>
+                    </div>
 
-                  <h3 className="text-xl font-bold mb-3 text-fg leading-snug">
-                    {post.titulo}
-                  </h3>
+                    <h3 className="text-xl font-bold mb-3 text-fg leading-snug group-hover:text-primary transition-colors">
+                      {post.titulo}
+                    </h3>
 
-                  <p className="text-muted-fg mb-4 grow">
-                    {post.resumo}
-                  </p>
+                    <p className="text-muted-fg mb-4 grow">
+                      {post.resumo}
+                    </p>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-muted text-sm text-muted-fg">
-                    <span>
-                      {new Date(post.data).toLocaleDateString('pt-BR', {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric'
-                      })}
-                    </span>
-                    <span className="text-primary font-medium">Ler mais →</span>
-                  </div>
-                </motion.article>
+                    <div className="flex items-center justify-between pt-4 border-t border-muted text-sm text-muted-fg">
+                      <span>
+                        {new Date(post.data).toLocaleDateString('pt-BR', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </span>
+                      <span className="text-primary font-medium group-hover:gap-1 flex items-center gap-0 transition-all">
+                        Ler mais <span className="group-hover:translate-x-1 transition-transform">→</span>
+                      </span>
+                    </div>
+                  </motion.article>
+                </Link>
               ))}
             </div>
 

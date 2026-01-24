@@ -7,6 +7,7 @@ import { Home } from '@/pages/Home'
 import { Acervo } from '@/pages/Acervo'
 import { About } from '@/pages/About'
 import { Blog } from '@/pages/Blog'
+import { BlogPost } from '@/pages/BlogPost'
 import { Legal } from '@/pages/Legal'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/acervo" element={<Acervo />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/termos" element={<Legal />} />
             <Route

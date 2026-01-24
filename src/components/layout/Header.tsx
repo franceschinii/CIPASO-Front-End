@@ -11,6 +11,7 @@ export function Header() {
   const navItems = [
     { to: '/', label: 'Início' },
     { to: '/acervo', label: 'Acervo' },
+    { to: '/blog', label: 'Blog' },
     { to: '/sobre', label: 'Sobre' },
     { to: '/termos', label: 'Termos & Legal', isSecondary: true }
   ]
