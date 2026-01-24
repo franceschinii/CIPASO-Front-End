@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src={parametrosLogo} alt="Parâmetros Logo" className="h-8 w-8 shrink-0" />
-              <h3 className="text-lg font-bold">Parâmetros</h3>
+              <h3 className="text-lg font-bold text-[#EDAF73]">Parâmetros Holísticos</h3>
             </div>
             <p className="text-sm text-muted-fg mb-4">
               Formação Humana LTDA.
@@ -50,7 +50,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-xs mt-4 text-yellow-600 dark:text-yellow-500 font-semibold">
-              CIPASO e Parâmetros não existem mais neste local físico.
+              CIPASO e Parâmetros Holísticos não existem mais neste local físico.
             </p>
           </div>
 

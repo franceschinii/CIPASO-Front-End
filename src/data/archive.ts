@@ -22,7 +22,7 @@ export const CATEGORIES: Record<ArchiveCategory, string> = {
   audios: 'Fitas de Relaxamento',
   videos: 'Filmagens',
   hemeroteca: 'Diário de Sorocaba',
-  publicacoes: 'Publicações Parâmetros'
+  publicacoes: 'Publicações Parâmetros Holísticos'
 }
 
 export const archiveFiles: ArchiveFile[] = [
