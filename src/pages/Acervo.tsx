@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { DocumentTextIcon, PhotoIcon, MusicalNoteIcon, FilmIcon, NewspaperIcon, BookOpenIcon } from '@heroicons/react/24/solid'
 import { MagnifyingGlassIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import { getAllFiles, type FileCategory } from '@/data/files'
 import { Modal } from '@/components/common/Modal'
 import { PdfViewer } from '@/components/common/PdfViewer'
+import { SEO } from '@/components/SEO'
 
 const categoryLabels: Record<string, string> = {
   textos: 'Documentos',
@@ -34,10 +35,6 @@ export function Acervo() {
   const [selectedFile, setSelectedFile] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isPdfFullscreen, setIsPdfFullscreen] = useState(false)
-
-  useEffect(() => {
-    document.title = 'Acervo Digital - Memorial CIPASO'
-  }, [])
 
   const handleCloseModal = () => {
     setIsPdfFullscreen(false)
@@ -90,7 +87,15 @@ export function Acervo() {
   }
 
   return (
-    <div className="min-h-screen bg-bg py-20">
+    <>
+      <SEO
+        title="Acervo Digital - Memorial CIPASO"
+        description="Explore publicações, documentos, vídeos e imagens históricas do CIPASO. Mais de 240 arquivos digitalizados sobre parapsicologia científica."
+        canonical="https://cipaso.com/acervo"
+        ogImage="https://cipaso.com/favicon.svg"
+        ogType="website"
+      />
+      <div className="min-h-screen bg-bg py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         {/* Título */}
         <motion.div
@@ -272,6 +277,8 @@ export function Acervo() {
                   src={selectedFile.path}
                   alt={selectedFile.titulo}
                   className="max-w-full max-h-[60vh] rounded-lg shadow-lg"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="w-full">
                   <p className="text-muted-fg text-sm mb-4">{selectedFile.descricao}</p>
@@ -396,6 +403,7 @@ export function Acervo() {
           </>
         )}
       </Modal>
-    </div>
+      </div>
+    </>
   )
 }

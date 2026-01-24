@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /acervo
+Allow: /sobre
+Allow: /blog
+Allow: /termos
+Allow: /uploads/publicacoes/*.pdf
+
+Disallow: /uploads/videos/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /sw.js
+Disallow: /workbox-*.js
+
+Sitemap: https://cipaso.com/sitemap-index.xml
+Sitemap: https://cipaso.com/sitemap-pdfs.xml

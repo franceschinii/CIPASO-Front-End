@@ -2161,15 +2161,6 @@
   },
   {
     "id": 241,
-    "titulo": "Publicação 241",
-    "descricao": "Publicação - www.geocities",
-    "categoria": "livros",
-    "data": "2026-01-22",
-    "path": "/uploads/publicacoes/www.geocities.ws",
-    "tipo": "livro"
-  },
-  {
-    "id": 242,
     "titulo": "O que é Parapsicologia",
     "descricao": "Vídeo - O que é Parapsicologia",
     "categoria": "videos",

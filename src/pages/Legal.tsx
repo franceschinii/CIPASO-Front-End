@@ -1,13 +1,17 @@
-import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { SEO } from '@/components/SEO'
 
 export function Legal() {
-  useEffect(() => {
-    document.title = 'Termos & Legal - Memorial CIPASO'
-  }, [])
-
   return (
-    <div className="min-h-screen bg-bg py-20">
+    <>
+      <SEO
+        title="Termos de Uso - Memorial CIPASO"
+        description="Termos de uso, política de privacidade e aviso legal do Memorial Digital CIPASO."
+        canonical="https://cipaso.com/termos"
+        ogImage="https://cipaso.com/favicon.svg"
+        ogType="website"
+      />
+      <div className="min-h-screen bg-bg py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         {/* Título */}
         <motion.div
@@ -174,6 +178,7 @@ export function Legal() {
           </section>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

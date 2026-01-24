@@ -1,17 +1,22 @@
-import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 import { Sprout, Flower2 } from 'lucide-react'
+import { SEO } from '@/components/SEO'
 import valterPhoto from '@/assets/png/vaf/Valter Franceschini.jpg'
 
 export function About() {
-  useEffect(() => {
-    document.title = 'Memorial CIPASO - Sobre'
-  }, [])
 
   return (
-    <div className="min-h-screen bg-bg">
+    <>
+      <SEO
+        title="Sobre o CIPASO - História e Metodologias"
+        description="Conheça a história do CIPASO, as 5 Ferramentas Mentais, a 3ª Lei da Mente e o legado do Prof. Valter Franceschini."
+        canonical="https://cipaso.com/sobre"
+        ogImage="https://cipaso.com/favicon.svg"
+        ogType="website"
+      />
+      <div className="min-h-screen bg-bg">
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 px-4 md:pt-32 md:pb-24 bg-linear-to-b from-primary/5 via-bg to-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
@@ -21,10 +26,10 @@ export function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-fg leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold mb-8 text-fg leading-tight">
               Sobre o Memorial
               <br />
-              <span className="text-primary">CIPASO</span>
+              <span className="text-primary text-7xl md:text-9xl">CIPASO</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-fg max-w-3xl mx-auto leading-relaxed font-light">
               Preservando a história da investigação científica, desenvolvimento humano e o legado do Prof. Valter Franceschini
@@ -184,8 +189,12 @@ export function About() {
                   <div className="relative aspect-3/4 overflow-hidden rounded-lg">
                     <img
                       src={valterPhoto}
-                      alt="Prof. Valter Franceschini"
+                      alt="Prof. Valter Franceschini, fundador do CIPASO e pesquisador parapsicológico"
                       className="w-full h-full object-cover"
+                      width={350}
+                      height={467}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
 
@@ -263,6 +272,7 @@ export function About() {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
