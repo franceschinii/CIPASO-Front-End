@@ -3,24 +3,6 @@ import { getPostBySlug } from '@/data/blog'
 import { SEO } from '@/components/SEO'
 import { useMemo } from 'react'
 
-function formatMarkdownToHtml(markdown: string): string {
-  let html = markdown
-    .replace(/^### (.*?)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3">$1</h3>')
-    .replace(/^## (.*?)$/gm, '<h2 class="text-2xl font-bold mt-8 mb-4">$1</h2>')
-    .replace(/^- (.*?)$/gm, '<li class="ml-6 mb-2">$1</li>')
-    .replace(/(?<!\w)<li(.*?)<\/li>(?!\w)/s, '<ul class="list-disc mb-4">$&</ul>')
-    .replace(/^(\d+)\. (.*?)$/gm, '<li class="ml-6 mb-2">$2</li>')
-    .replace(/(?<!\w)<li(.*?)<\/li>(?!\w)/s, '<ol class="list-decimal mb-4">$&</ol>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold">$1</strong>')
-    .replace(/\n\n/g, '</p><p class="mb-4">')
-    .replace(/^(?!<[h|u|o|l])(.+)$/gm, (match) => {
-      if (match.startsWith('<')) return match
-      return `<p class="mb-4">${match}</p>`
-    })
-
-  return `<div class="prose prose-invert max-w-none">${html}</div>`
-}
-
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
   const post = useMemo(() => slug ? getPostBySlug(slug) : undefined, [slug])
